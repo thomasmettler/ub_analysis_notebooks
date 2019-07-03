@@ -1,0 +1,39 @@
+Length of initial selection: 108249
+nu_pdg==14 & longest_track_length==track_length & track_length!=0
+Length of selection: 35415  -  375692
+nu_pdg==14 & longest_track_length==track_length & track_length!=0& topologicalScore>0.06
+Length of selection: 26699  -  384408
+nu_pdg==14 & longest_track_length==track_length & track_length!=0& topologicalScore>0.06& start_contained
+Length of selection: 21420  -  389687
+nu_pdg==14 & longest_track_length==track_length & track_length!=0& topologicalScore>0.06& start_contained& vtx_distance<5
+Length of selection: 17379  -  393728
+nu_pdg==14 & longest_track_length==track_length & track_length!=0& topologicalScore>0.06& start_contained& vtx_distance<5& track_score>0.95
+Length of selection: 9711  -  401396
+& longest_track_length==track_length
+Length of selection: 9711  -  401396
+& track_length>20
+Length of selection: 9498  -  401609
+& track_chi2_proton>40
+Length of selection: 7080  -  404027
+& track_chi2_muon<50
+Length of selection: 6853  -  404254
+& (track_chi2_muon/track_chi2_proton)<0.4
+Length of selection: 6615  -  404492
+Length of selection: 6615
+
+track_length cut: 9711 - 9498 = 213  // 213
+
+chi2 proton: 9498 - 7080 = 2418
+chi2 muon: 7080 - 6853 = 227
+chi2 ration: 6853 - 6615 = 238
+total: 2883
+from cuts: 2259 + 216 + 232 = 2707
+
+topocut: 35415 - 26699 = 8716 // 8717
+
+contained; 26699- 21420 = 5279 // 5376
+
+VRX DIST: 21420-17379 = 4041 // 2465
+
+track_score: 17379-9711 = 7668 // 9220
+tot track+crx = 11709 // 12385

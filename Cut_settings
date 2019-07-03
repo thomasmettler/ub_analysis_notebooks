@@ -1,0 +1,59 @@
+Wrong nr 1:
+########## cut variables ##########
+NuScore_cut : 0.06 # 0=disabled
+NuPDG_cut : 14
+startcontained_cut : 1
+track_length_cut : 20
+track_score_cut : 0.95
+vrx_dist_cut : 5
+longest_track_cut : 1
+##topologicalScore_cut : 0.06 ## this the nuscore cut
+#flashMatchScore_cut : 10 # not implemented
+#flashMatchScore_per_bestCosmicMatch_cut : 4 # not implemented
+track_chi2_muon_per_track_chi2_proton : 0.4
+track_chi2_proton_cut : 40
+track_chi2_muon_cut : 50
+
+vertex_start_x_cut : 9.45 # = -1.55 + 10
+vertex_start_y_cut : -105.53 # = -115.53 + 10
+vertex_start_z_cut : 10.1 # = 0.1 + 10
+
+vertex_end_x_cut : 244.8 # = 254.8 - 10
+vertex_end_y_cut : 107.47 # = 117.47 - 10
+vertex_end_z_cut : 986.9 # = 1036.9 - 50
+
+
+Take 2:
+NuScore_cut : 0.087 # 0=disabled
+NuPDG_cut : 14
+startcontained_cut : 1
+track_length_cut : 20
+track_score_cut : 0.97
+vrx_dist_cut : 5
+longest_track_cut : 1
+##topologicalScore_cut : 0.06 ## this the nuscore cut
+#flashMatchScore_cut : 10 # not implemented
+#flashMatchScore_per_bestCosmicMatch_cut : 4 # not implemented
+track_chi2_muon_per_track_chi2_proton : 0.12
+track_chi2_proton_cut : 100
+track_chi2_muon_cut : 20
+
+vertex_start_x_cut : 9.45 # = -1.55 + 10
+vertex_start_y_cut : -105.53 # = -115.53 + 10
+vertex_start_z_cut : 10.1 # = 0.1 + 10
+
+vertex_end_x_cut : 244.8 # = 254.8 - 10
+vertex_end_y_cut : 107.47 # = 117.47 - 10
+vertex_end_z_cut : 986.9 # = 1036.9 - 50
+
+
+
+cols = ['NuScore', 'NuPDG', 'NumPfp_', 'Nu_Vx', 'Nu_Vy','Nu_Vz', 'Vx', 'Vy', 'Vz',\
+        'TrackScore','VtxDistance','TrackLength','TrackPID_chiproton', 'TrackPID_chipion', 'TrackPID_chikaon',\
+       'TrackPID_chimuon', 'NuTracks', 'NuShowers',\
+        'MCNu_CCNC','MCNu_PDG','MCNu_Energy','MCNu_LeptonEnergy','MCNu_leptonTheta','MCNu_Vx','MCNu_Vy','MCNu_Vz',\
+       'MCle_PDG','MCle_Energy','MCle_length']
+       
+       
+       
+       

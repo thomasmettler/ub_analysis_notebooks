@@ -1,0 +1,109 @@
+/pnfs/uboone/scratch/users/tmettler/cc_filter/data_Overlay_nue_run1_v08_00_00_12/all/19512766_98/PhysicsRun-2016_7_2_23_50_40-0006776-00039_20160703T072820_ext_unbiased_20160703T214532_merged_gen_20190502T030841_eventweight_20190502T031922_g4_dets_b1898a28-17dc-4a5d-9933-31e51a45ddcc.root
+###### Filter summary  ######################
+   Failed due to has one neutrino: 174
+Failed due to Nu PDG:              715
+Failed due to Nuscore/toposcore:   65
+Failed due to fiducial:            41
+Failed due to no muon candidate:   0
+Failed due to tracklength:         1
+Failed due to track_score:         70
+Failed due to vrx_dist:            24
+Failed due to chi_muon:            3
+Failed due to chi_proton:          17
+Failed due to chi_ratio:           0
+Failed due to PID asso:            0
+Failed due to neutrino meta data:  0
+Failed due to getPID:              5
+###### End summary  #########################
+
+TrigReport ---------- Event  Summary ------------
+TrigReport Events total = 1159 passed = 44 failed = 1115
+
+
+
+/pnfs/uboone/scratch/users/tmettler/cc_filter/data_Overlay_nue_run1_v08_00_00_12/all/19512767_99/PhysicsRun-2016_7_31_16_1_10-0007014-00973_20160806T233319_ext_unbiased_20160807T233250_merged_gen_20190428T172239_eventweight_20190428T173223_g4_dets_fe138c88-8a25-4897-bc0e-0133baa10de1.root
+###### Filter summary  ######################
+   Failed due to has one neutrino: 177
+Failed due to Nu PDG:              701
+Failed due to Nuscore/toposcore:   65
+Failed due to fiducial:            28
+Failed due to no muon candidate:   0
+Failed due to tracklength:         1
+Failed due to track_score:         73
+Failed due to vrx_dist:            11
+Failed due to chi_muon:            2
+Failed due to chi_proton:          19
+Failed due to chi_ratio:           2
+Failed due to PID asso:            0
+Failed due to neutrino meta data:  0
+Failed due to getPID:              2
+###### End summary  #########################
+
+TrigReport ---------- Event  Summary ------------
+TrigReport Events total = 1141 passed = 60 failed = 1081
+
+
+/pnfs/uboone/scratch/users/tmettler/cc_filter/data_Overlay_nue_run1_v08_00_00_12/all/19512769_100/PhysicsRun-2016_8_3_14_49_36-0007048-00053_20160815T151250_ext_unbiased_20160817T092148_merged_gen_20190427T170714_eventweight_20190427T171538_g4_dets_1cf1c74d-5c36-4338-b595-bb19b1eb4463.root
+###### Filter summary  ######################
+   Failed due to has one neutrino: 185
+Failed due to Nu PDG:              698
+Failed due to Nuscore/toposcore:   64
+Failed due to fiducial:            53
+Failed due to no muon candidate:   0
+Failed due to tracklength:         0
+Failed due to track_score:         72
+Failed due to vrx_dist:            22
+Failed due to chi_muon:            2
+Failed due to chi_proton:          19
+Failed due to chi_ratio:           3
+Failed due to PID asso:            0
+Failed due to neutrino meta data:  0
+Failed due to getPID:              5
+###### End summary  #########################
+
+TrigReport ---------- Event  Summary ------------
+TrigReport Events total = 1186 passed = 63 failed = 1123
+
+
+###### Filter summary  ######################
+   Failed due to has one neutrino: 23080
+Failed due to Nu PDG:              89626
+Failed due to Nuscore/toposcore:   8717
+Failed due to fiducial:            5376
+Failed due to no muon candidate:   1
+Failed due to tracklength:         213
+Failed due to track_score:         9220
+Failed due to vrx_dist:            2465
+Failed due to chi_muon:            216
+Failed due to chi_proton:          2259
+Failed due to chi_ratio:           232
+Failed due to PID asso:            0
+Failed due to neutrino meta data:  0
+Failed due to getPID:              483
+###### End summary  #########################
+
+TrigReport ---------- Event  Summary ------------
+TrigReport Events total = 148123 passed = 6235 failed = 141888
+
+
+12-Jun-2019 15:40:35 CDT  Closed input file "/pnfs/uboone/scratch/users/tmettler/cc_filter/data_Overlay_nue_run1_v08_00_00_12/all/19513157_96/PhysicsRun-2016_7_29_17_36_16-0007001-00033_20160805T200112_ext_unbiased_20160807T023123_merged_gen_20190427T014102_eventweight_20190427T015324_g4_det_a5c6a107-b49c-4ead-8835-86821b3c3daf.root"
+###### Filter summary  ######################
+   Failed due to has one neutrino: 23080
+Failed due to Nu PDG:              89626
+Failed due to Nuscore/toposcore:   10265
+Failed due to fiducial:            4977
+Failed due to no muon candidate:   1
+Failed due to tracklength:         53
+Failed due to track_score:         10458
+Failed due to vrx_dist:            2126
+Failed due to chi_muon:            1025
+Failed due to chi_proton:          2912
+Failed due to chi_ratio:           127
+Failed due to PID asso:            0
+Failed due to neutrino meta data:  0
+Failed due to getPID:              368
+###### End summary  #########################
+
+TrigReport ---------- Event  Summary ------------
+TrigReport Events total = 148123 passed = 3105 failed = 145018
+
