@@ -1,0 +1,78 @@
+
+filename_ext = 'NuCCana_ext_V25_G1.root'
+
+
+ext_trigger =  85768579.0  #2120135 #5685315 # EXT
+
+
+
+
+pot_latex.SetTextSize(1/20.);
+pot_data_draw
+
+
+
+
+def draw_adding():
+    prelim = ROOT.TLatex(0.9,0.93, "MicroBooNE Preliminary");
+    prelim.SetTextFont(62);
+    prelim.SetTextColor(ROOT.kGray+2);
+    prelim.SetNDC();
+    prelim.SetTextSize(1/25.);
+    prelim.SetTextAlign(32);
+    #prelim.SetTextSize(0.04631579);
+    prelim.Draw()
+
+    pot_latex = ROOT.TLatex(.10, .92,'Accumulated POT: '+str(pot_data_draw)) 
+    pot_latex.SetTextFont(62);
+    pot_latex.SetTextColor(ROOT.kGray+2);
+    pot_latex.SetNDC();
+    pot_latex.SetTextSize(1/25.);
+    pot_latex.SetTextAlign(10) #;//left adjusted
+    pot_latex.Draw();
+    
+    return prelim, pot_latex
+
+def draw_sim():
+    prelim = ROOT.TLatex(0.9,0.93, "MicroBooNE Simulation Preliminary");
+    prelim.SetTextFont(62);
+    prelim.SetTextColor(ROOT.kGray+2);
+    prelim.SetNDC();
+    prelim.SetTextSize(1/25.);
+    prelim.SetTextAlign(32);
+    #prelim.SetTextSize(0.04631579);
+    prelim.Draw()
+    
+    return prelim
+
+def draw_adding_ratio():
+    prelim = ROOT.TLatex(0.9,0.93, "MicroBooNE Preliminary");
+    prelim.SetTextFont(62);
+    prelim.SetTextColor(ROOT.kGray+2);
+    prelim.SetNDC();
+    prelim.SetTextSize(1/19.);
+    prelim.SetTextAlign(32);
+    #prelim.SetTextSize(0.04631579);
+    prelim.Draw()
+
+    pot_latex = ROOT.TLatex(.10, .92,'Accumulated POT: '+str(pot_data_draw)) 
+    pot_latex.SetTextFont(62);
+    pot_latex.SetTextColor(ROOT.kGray+2);
+    pot_latex.SetNDC();
+    pot_latex.SetTextSize(1/19.);
+    pot_latex.SetTextAlign(10) #;//left adjusted
+    pot_latex.Draw();
+    
+    return prelim, pot_latex
+
+def draw_sim_ratio():
+    prelim = ROOT.TLatex(0.9,0.93, "MicroBooNE Simulation Preliminary");
+    prelim.SetTextFont(62);
+    prelim.SetTextColor(ROOT.kGray+2);
+    prelim.SetNDC();
+    prelim.SetTextSize(1/19.);
+    prelim.SetTextAlign(32);
+    #prelim.SetTextSize(0.04631579);
+    prelim.Draw()
+    
+    return prelim

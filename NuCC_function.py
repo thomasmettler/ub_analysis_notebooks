@@ -56,6 +56,34 @@ def loadGlobal(data_in,ext_in,dirt_in,overlay_in,data_in_out,ext_in_out,dirt_in_
     c1.SetBottomMargin(0.14)
     return
 
+def loadGlobal(data_in,ext_in,dirt_in,overlay_in,data_in_out,ext_in_out,dirt_in_out,overlay_in_out,scale_in,scale_in_out,tot_num_fidVol_in,overlay_signals_in,sample_in,sample_in_out,name_in, name_in_out,outputdir_png_in,outputdir_root_in,outputdir_pdf_in):
+    globale.data = data_in
+    globale.ext = ext_in
+    globale.dirt = dirt_in
+    globale.overlay = overlay_in
+    globale.data_out = data_in_out
+    globale.ext_out = ext_in_out
+    globale.dirt_out = dirt_in_out
+    globale.overlay_out = overlay_in_out
+    globale.scale = scale_in
+    globale.scale_out = scale_in_out
+    globale.tot_num_fidVol = tot_num_fidVol_in
+    globale.overlay_signals = overlay_signals_in
+    globale.sample = sample_in
+    globale.sample_out = sample_in_out
+    globale.name = name_in
+    globale.name_out = name_in_out
+    globale.outputdir_png = outputdir_png_in
+    globale.outputdir_root = outputdir_root_in
+    globale.outputdir_pdf = outputdir_pdf_in
+    ROOT.gStyle.SetOptStat(0)
+    c1 = ROOT.TCanvas("c1","c1",1600,1200)
+    c1.SetGrid(1)
+    c1.SetLeftMargin(0.14)
+    c1.SetRightMargin(0.18)
+    c1.SetBottomMargin(0.14)
+    return
+
 def loadGlobal_detsys(data_in, ext_in,dirt_in, overlay_in, detsys_in, data_in_out, ext_in_out, dirt_in_out, overlay_in_out, detsys_in_out, scale_in,scale_in_out, tot_num_fidVol_in, overlay_signals_in, sample_in, sample_in_out,name_in, name_in_out, outputdir_png_in, outputdir_root_in):
     globale.data = data_in 
     globale.ext = ext_in
@@ -102,6 +130,28 @@ def prepareOutput(outputdir):
     except:
         os.mkdir(outputdir_root)
     return outputdir_png, outputdir_root
+
+def prepareOutput2(outputdir):
+    outputdir_png = outputdir+'png/'
+    outputdir_root = outputdir+'root/'
+    outputdir_pdf = outputdir+'pdf/'
+    try:
+        os.stat(outputdir)
+    except:
+        os.mkdir(outputdir)
+    try:
+        os.stat(outputdir_png)
+    except:
+        os.mkdir(outputdir_png)
+    try:
+        os.stat(outputdir_root)
+    except:
+        os.mkdir(outputdir_root)
+    try:
+        os.stat(outputdir_pdf)
+    except:
+        os.mkdir(outputdir_pdf)
+    return outputdir_png, outputdir_root,outputdir_pdf
 
 def openTrees(input_dir, file_data, file_ext, file_dirt, file_overlay, tree_name):
     data = ROOT.TChain(tree_name + "/event","event")

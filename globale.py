@@ -22,4 +22,5 @@ name_out = {}
 c1 = ROOT.TCanvas("c1","c1",1600,1200)
 outputdir_png = ''
 outputdir_root = ''
+outputdir_pdf = ''
 
