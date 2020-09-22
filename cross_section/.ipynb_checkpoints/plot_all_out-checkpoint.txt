@@ -1,0 +1,292 @@
+Overlay: Number of Entries:	989745
+Data: Number of Entries:	28005
+Ext: Number of Entries:		222702
+Dirt: Number of Entries:	40808
+
+POT: 
+Data:		7.644e+18
+Ext:		0
+Overlay:	1.24025430537e+21
+Dirt:		1.25019694173e+20
+
+Scalefactors: 
+Data:		1.0
+Ext:		0.0967862715198
+Overlay:	0.00616325213863
+Dirt:		0.0611423668132
+Overlay: Number of Entries:	989714
+Data: Number of Entries:	28004
+Ext: Number of Entries:		222701
+Dirt: Number of Entries:	40800
+
+Fiducial Volume:  49184671.35
+Beam flux = 5.61099e+09  /cm2
+Number of target nuclei= 4.10331e+31  /cm3
+All cuts
+Normalization (data)/(mc +ext) =  0.994990241695
+Normalization (data)/(mc +ext) =  0.994990113863
+Normalization (data)/(mc +ext) =  0.994990254358
+Normalization (data)/(mc +ext) =  1.03141196263
+Normalization (data)/(mc +ext) =  0.994990181333
+Normalization (data)/(mc +ext) =  0.994989987193
+Normalization (data)/(mc +ext) =  1.00308233927
+Normalization (data)/(mc +ext) =  1.00402289519
+Normalization (data)/(mc +ext) =  0.995041725425
+Normalization (data)/(mc +ext) =  0.998187060084
+Normalization (data)/(mc +ext) =  0.996414726023
+Normalization (data)/(mc +ext) =  0.999659464072
+Normalization (data)/(mc +ext) =  0.994971002804
+Normalization (data)/(mc +ext) =  0.994971002804
+Normalization (data)/(mc +ext) =  1.28862564116
+Normalization (data)/(mc +ext) =  0.995070970087
+Normalization (data)/(mc +ext) =  0.995063712908
+Normalization (data)/(mc +ext) =  0.996347971436
+preselection
+Normalization (data)/(mc +ext) =  0.996394662451
+Normalization (data)/(mc +ext) =  0.996394505609
+Normalization (data)/(mc +ext) =  0.996394539147
+Normalization (data)/(mc +ext) =  1.03885668927
+Normalization (data)/(mc +ext) =  0.996394003102
+Normalization (data)/(mc +ext) =  0.996394302112
+Normalization (data)/(mc +ext) =  0.999867544236
+Normalization (data)/(mc +ext) =  1.00612540543
+Normalization (data)/(mc +ext) =  1.0008670918
+Normalization (data)/(mc +ext) =  1.00238669845
+Normalization (data)/(mc +ext) =  1.04614203065
+Normalization (data)/(mc +ext) =  1.00209343685
+Normalization (data)/(mc +ext) =  0.996596545391
+Normalization (data)/(mc +ext) =  0.997472456104
+Normalization (data)/(mc +ext) =  1.11520914474
+Normalization (data)/(mc +ext) =  0.996424650662
+Normalization (data)/(mc +ext) =  0.996434978198
+Normalization (data)/(mc +ext) =  0.997195165556
+Normalization (data)/(mc +ext) =  0.995662191472
+Normalization (data)/(mc +ext) =  0.995662070858
+Normalization (data)/(mc +ext) =  0.995662093897
+Normalization (data)/(mc +ext) =  1.01839991226
+Normalization (data)/(mc +ext) =  0.995661512858
+Normalization (data)/(mc +ext) =  0.995661839666
+Normalization (data)/(mc +ext) =  0.999312854756
+Normalization (data)/(mc +ext) =  1.00386814864
+Normalization (data)/(mc +ext) =  0.998371533945
+Normalization (data)/(mc +ext) =  0.999909891684
+Normalization (data)/(mc +ext) =  1.04428220775
+Normalization (data)/(mc +ext) =  1.00058364602
+Normalization (data)/(mc +ext) =  0.995872943512
+Normalization (data)/(mc +ext) =  0.996665941391
+Normalization (data)/(mc +ext) =  1.12108650269
+Normalization (data)/(mc +ext) =  0.995693757576
+Normalization (data)/(mc +ext) =  0.995704378281
+Normalization (data)/(mc +ext) =  0.996490914199
+Normalization (data)/(mc +ext) =  0.988099666022
+Normalization (data)/(mc +ext) =  0.988099604694
+Normalization (data)/(mc +ext) =  0.988099539801
+Normalization (data)/(mc +ext) =  1.01692829077
+Normalization (data)/(mc +ext) =  0.988099184909
+Normalization (data)/(mc +ext) =  0.988099195327
+Normalization (data)/(mc +ext) =  0.993568549169
+Normalization (data)/(mc +ext) =  0.998277191044
+Normalization (data)/(mc +ext) =  0.991477971689
+Normalization (data)/(mc +ext) =  0.993472731011
+Normalization (data)/(mc +ext) =  1.05486355833
+Normalization (data)/(mc +ext) =  0.994759574025
+Normalization (data)/(mc +ext) =  0.988088322398
+Normalization (data)/(mc +ext) =  0.988088322398
+Normalization (data)/(mc +ext) =  1.17324039155
+Normalization (data)/(mc +ext) =  0.98814991465
+Normalization (data)/(mc +ext) =  0.988151420634
+Normalization (data)/(mc +ext) =  0.989134419307
+Normalization (data)/(mc +ext) =  0.988116402329
+Normalization (data)/(mc +ext) =  0.988116220829
+Normalization (data)/(mc +ext) =  0.9881162938
+Normalization (data)/(mc +ext) =  1.01834637865
+Normalization (data)/(mc +ext) =  0.98811604102
+Normalization (data)/(mc +ext) =  0.988115974695
+Normalization (data)/(mc +ext) =  0.993788266921
+Normalization (data)/(mc +ext) =  0.996167073854
+Normalization (data)/(mc +ext) =  0.99114658927
+Normalization (data)/(mc +ext) =  0.992482086062
+Normalization (data)/(mc +ext) =  1.05471272305
+Normalization (data)/(mc +ext) =  0.994757134857
+Normalization (data)/(mc +ext) =  0.988105873579
+Normalization (data)/(mc +ext) =  0.988105873579
+Normalization (data)/(mc +ext) =  1.18818815368
+Normalization (data)/(mc +ext) =  0.988167284904
+Normalization (data)/(mc +ext) =  0.988171975975
+Normalization (data)/(mc +ext) =  0.989172235655
+Normalization (data)/(mc +ext) =  0.993503115173
+Normalization (data)/(mc +ext) =  0.993502907041
+Normalization (data)/(mc +ext) =  0.993502943379
+Normalization (data)/(mc +ext) =  1.02044192205
+Normalization (data)/(mc +ext) =  0.993502768014
+Normalization (data)/(mc +ext) =  0.993502738062
+Normalization (data)/(mc +ext) =  0.99963521808
+Normalization (data)/(mc +ext) =  1.0016636841
+Normalization (data)/(mc +ext) =  0.995778609286
+Normalization (data)/(mc +ext) =  0.997592731143
+Normalization (data)/(mc +ext) =  1.03678469205
+Normalization (data)/(mc +ext) =  0.999473937329
+Normalization (data)/(mc +ext) =  0.993490743383
+Normalization (data)/(mc +ext) =  0.993490743383
+Normalization (data)/(mc +ext) =  1.21293539977
+Normalization (data)/(mc +ext) =  0.993558130732
+Normalization (data)/(mc +ext) =  0.993562967274
+Normalization (data)/(mc +ext) =  0.994623079834
+Normalization (data)/(mc +ext) =  0.990934612053
+Normalization (data)/(mc +ext) =  0.990934423455
+Normalization (data)/(mc +ext) =  0.990934437814
+Normalization (data)/(mc +ext) =  1.0188953056
+Normalization (data)/(mc +ext) =  0.990934264391
+Normalization (data)/(mc +ext) =  0.990934262228
+Normalization (data)/(mc +ext) =  0.997345221135
+Normalization (data)/(mc +ext) =  0.998574514255
+Normalization (data)/(mc +ext) =  0.990985467518
+Normalization (data)/(mc +ext) =  0.993601096688
+Normalization (data)/(mc +ext) =  0.992462132481
+Normalization (data)/(mc +ext) =  0.994803552986
+Normalization (data)/(mc +ext) =  0.990921195533
+Normalization (data)/(mc +ext) =  0.990921195533
+Normalization (data)/(mc +ext) =  1.22307666559
+Normalization (data)/(mc +ext) =  0.990992668582
+Normalization (data)/(mc +ext) =  0.990997715515
+Normalization (data)/(mc +ext) =  0.992101545747
+Normalization (data)/(mc +ext) =  0.994990259577
+Normalization (data)/(mc +ext) =  0.9949901281
+Normalization (data)/(mc +ext) =  0.994990268802
+Normalization (data)/(mc +ext) =  1.06035080335
+Normalization (data)/(mc +ext) =  1.02255349928
+Normalization (data)/(mc +ext) =  1.02255063712
+Normalization (data)/(mc +ext) =  1.03108776131
+Normalization (data)/(mc +ext) =  1.03189737358
+Normalization (data)/(mc +ext) =  1.02260521816
+Normalization (data)/(mc +ext) =  1.02587852691
+Normalization (data)/(mc +ext) =  1.02397202224
+Normalization (data)/(mc +ext) =  1.02738270642
+Normalization (data)/(mc +ext) =  1.02253459916
+Normalization (data)/(mc +ext) =  1.02253459916
+Normalization (data)/(mc +ext) =  1.33375492833
+Normalization (data)/(mc +ext) =  1.02263963236
+Normalization (data)/(mc +ext) =  1.02262686865
+Normalization (data)/(mc +ext) =  1.02385362584
+Normalization (data)/(mc +ext) =  0.990934528658
+Normalization (data)/(mc +ext) =  0.990934349988
+Normalization (data)/(mc +ext) =  0.990934361727
+Normalization (data)/(mc +ext) =  1.04035334904
+Normalization (data)/(mc +ext) =  1.01170299118
+Normalization (data)/(mc +ext) =  1.01170064609
+Normalization (data)/(mc +ext) =  1.01837095983
+Normalization (data)/(mc +ext) =  1.01950703264
+Normalization (data)/(mc +ext) =  1.01175479874
+Normalization (data)/(mc +ext) =  1.01443921188
+Normalization (data)/(mc +ext) =  1.01320925827
+Normalization (data)/(mc +ext) =  1.01565903099
+Normalization (data)/(mc +ext) =  1.0116857705
+Normalization (data)/(mc +ext) =  1.0116857705
+Normalization (data)/(mc +ext) =  1.25380043197
+Normalization (data)/(mc +ext) =  1.01176435506
+Normalization (data)/(mc +ext) =  1.01176683639
+Normalization (data)/(mc +ext) =  1.01280297583
+Normalization (data)/(mc +ext) =  0.993502992632
+Normalization (data)/(mc +ext) =  0.993502799207
+Normalization (data)/(mc +ext) =  0.993502838219
+Normalization (data)/(mc +ext) =  1.0500657057
+Normalization (data)/(mc +ext) =  1.02207942025
+Normalization (data)/(mc +ext) =  1.0220772913
+Normalization (data)/(mc +ext) =  1.02855613929
+Normalization (data)/(mc +ext) =  1.03052050934
+Normalization (data)/(mc +ext) =  1.02422561624
+Normalization (data)/(mc +ext) =  1.02621481798
+Normalization (data)/(mc +ext) =  1.05930116884
+Normalization (data)/(mc +ext) =  1.02793475026
+Normalization (data)/(mc +ext) =  1.0220626486
+Normalization (data)/(mc +ext) =  1.0220626486
+Normalization (data)/(mc +ext) =  1.25453270421
+Normalization (data)/(mc +ext) =  1.02213862981
+Normalization (data)/(mc +ext) =  1.02214101619
+Normalization (data)/(mc +ext) =  1.02314949372
+Normalization (data)/(mc +ext) =  0.988116255837
+Normalization (data)/(mc +ext) =  0.988116054435
+Normalization (data)/(mc +ext) =  0.98811614911
+Normalization (data)/(mc +ext) =  1.05148822283
+Normalization (data)/(mc +ext) =  1.02020299256
+Normalization (data)/(mc +ext) =  1.02020092826
+Normalization (data)/(mc +ext) =  1.02623693958
+Normalization (data)/(mc +ext) =  1.02853808915
+Normalization (data)/(mc +ext) =  1.02309176399
+Normalization (data)/(mc +ext) =  1.02459798287
+Normalization (data)/(mc +ext) =  1.07860113659
+Normalization (data)/(mc +ext) =  1.02667483248
+Normalization (data)/(mc +ext) =  1.02018723557
+Normalization (data)/(mc +ext) =  1.02018723557
+Normalization (data)/(mc +ext) =  1.2337433602
+Normalization (data)/(mc +ext) =  1.02025810923
+Normalization (data)/(mc +ext) =  1.02026032551
+Normalization (data)/(mc +ext) =  1.02121773609
+Normalization (data)/(mc +ext) =  0.988099534235
+Normalization (data)/(mc +ext) =  0.988099458935
+Normalization (data)/(mc +ext) =  0.988099414573
+Normalization (data)/(mc +ext) =  1.05099426334
+Normalization (data)/(mc +ext) =  1.02110953699
+Normalization (data)/(mc +ext) =  1.02110759368
+Normalization (data)/(mc +ext) =  1.02693855319
+Normalization (data)/(mc +ext) =  1.03167240646
+Normalization (data)/(mc +ext) =  1.02436852792
+Normalization (data)/(mc +ext) =  1.02656730941
+Normalization (data)/(mc +ext) =  1.07972792573
+Normalization (data)/(mc +ext) =  1.02762604356
+Normalization (data)/(mc +ext) =  1.02109400772
+Normalization (data)/(mc +ext) =  1.02109400772
+Normalization (data)/(mc +ext) =  1.21902271564
+Normalization (data)/(mc +ext) =  1.02116440435
+Normalization (data)/(mc +ext) =  1.02116336185
+Normalization (data)/(mc +ext) =  1.02210743836
+Normalization (data)/(mc +ext) =  0.995662063934
+Normalization (data)/(mc +ext) =  0.995661935223
+Normalization (data)/(mc +ext) =  0.995661966616
+Normalization (data)/(mc +ext) =  1.04461500362
+Normalization (data)/(mc +ext) =  1.02144766191
+Normalization (data)/(mc +ext) =  1.0214465596
+Normalization (data)/(mc +ext) =  1.02528275474
+Normalization (data)/(mc +ext) =  1.02985273014
+Normalization (data)/(mc +ext) =  1.02403325549
+Normalization (data)/(mc +ext) =  1.02569937517
+Normalization (data)/(mc +ext) =  1.06315363249
+Normalization (data)/(mc +ext) =  1.02617130643
+Normalization (data)/(mc +ext) =  1.02165756911
+Normalization (data)/(mc +ext) =  1.0224851673
+Normalization (data)/(mc +ext) =  1.15311720926
+Normalization (data)/(mc +ext) =  1.02148180319
+Normalization (data)/(mc +ext) =  1.02149293527
+Normalization (data)/(mc +ext) =  1.02221982818
+Normalization (data)/(mc +ext) =  0.996394527431
+Normalization (data)/(mc +ext) =  0.996394406026
+Normalization (data)/(mc +ext) =  0.996394408549
+Normalization (data)/(mc +ext) =  1.06546207008
+Normalization (data)/(mc +ext) =  1.0236388588
+Normalization (data)/(mc +ext) =  1.02363781976
+Normalization (data)/(mc +ext) =  1.02729752768
+Normalization (data)/(mc +ext) =  1.03356410067
+Normalization (data)/(mc +ext) =  1.02798187733
+Normalization (data)/(mc +ext) =  1.02962811035
+Normalization (data)/(mc +ext) =  1.06652850033
+Normalization (data)/(mc +ext) =  1.02909513205
+Normalization (data)/(mc +ext) =  1.02383917576
+Normalization (data)/(mc +ext) =  1.02475876452
+Normalization (data)/(mc +ext) =  1.14871500365
+Normalization (data)/(mc +ext) =  1.02367141517
+Normalization (data)/(mc +ext) =  1.02368211379
+Normalization (data)/(mc +ext) =  1.02438292679
+Efficiency:	66.30%
+Purity:		34.39%
+Efficiency:	50.36%
+Purity:		72.10%
+Efficiency:	55.82%
+Purity:		58.12%
+Efficiency:	55.98%
+Purity:		55.16%
+Efficiency:	56.94%
+Purity:		52.26%
+Efficiency:	58.37%
+Purity:		50.22%
+Efficiency:	65.98%
+Purity:		36.00%

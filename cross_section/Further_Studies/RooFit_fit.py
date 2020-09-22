@@ -96,8 +96,10 @@ c1.SetBottomMargin(0.14)
 
 
 #load data
-inputdir = '/home/tmettler/Desktop/ub_data/mcc9.1/v08_00_00_33/V08_00_00_35/fitting/tutorial/RooFit-tutorial/hists/'
-f_mom = ROOT.TFile.Open(inputdir+"xsec_histos.root", 'read')
+#inputdir = '/home/tmettler/Desktop/ub_data/mcc9.1/v08_00_00_33/V08_00_00_35/fitting/tutorial/RooFit-tutorial/hists/'
+#f_mom = ROOT.TFile.Open(inputdir+"xsec_histos.root", 'read')
+inputdir = '/home/tmettler/Desktop/v08_00_00_33/V08_00_00_35/weighted/xsec_momentum_rooFit/'
+f_mom = ROOT.TFile.Open(inputdir+"xsec_momentum_fit.root", 'read')
 
 h_true = f_mom.Get('mom_truth_sig')
 h_temp = []

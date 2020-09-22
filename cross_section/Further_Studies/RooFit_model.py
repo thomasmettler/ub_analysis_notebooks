@@ -104,7 +104,7 @@ h_true = f_mom.Get('mom_truth')
 h_temp = []
 for i in range(binnum):
     h_temp.append(f_mom.Get('mom_reco_'+str(i)))
-h_data = f_mom.Get('mc_reco') #data_reco
+h_data = f_mom.Get('data_reco') #data_reco mc_reco
 h_background = f_mom.Get('mom_bkg_reco')
 h_signal = f_mom.Get('mom_truth_sig')
 
@@ -154,9 +154,24 @@ for i in range(binnum):
     
     # add the signal samples
     sample = ROOT.RooStats.HistFactory.Sample(ROOT.Form('mom_acceptance_template_'+str(i)))
-    sample.SetNormalizeByTheory(False)
+    sample.SetNormalizeByTheory(False)        
+    #sample.SetNormalizeByTheory(True)
     sample.SetHisto(h_temp[i])
     sample.AddNormFactor(mom_XS)
+    
+    
+    signal_shape = ROOT.RooStats.HistFactory.HistoSys()
+    signal_shape.SetName("signal_shape")
+    h_high = h_temp[i].Clone()
+    h_high.Scale(1.1)
+    
+    h_low = h_temp[i].Clone()
+    h_low.Scale(0.9)
+    
+    signal_shape.SetHistoHigh( h_high )
+    signal_shape.SetHistoLow( h_low )
+    sample.AddHistoSys( signal_shape )
+    
     chan_ee.AddSample(sample)
 
 
@@ -165,6 +180,19 @@ for i in range(binnum):
 
 sample_nonFid = ROOT.RooStats.HistFactory.Sample("ZnonFid");
 sample_nonFid.SetHisto(h_background);
+
+bkg_shape = ROOT.RooStats.HistFactory.HistoSys()
+bkg_shape.SetName('bkg_shape')
+h_high = h_background.Clone()
+h_high.Scale(1.05)
+
+h_low = h_background.Clone()
+h_low.Scale(0.95)
+    
+bkg_shape.SetHistoHigh( h_high )
+bkg_shape.SetHistoLow( h_low )
+sample_nonFid.AddHistoSys( bkg_shape )
+
 chan_ee.AddSample(sample_nonFid);
 
 
