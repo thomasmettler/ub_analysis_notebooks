@@ -194,7 +194,7 @@ def calculateScale(data_trigger, ext_trigger, pot_data, pot_dirt, pot_overlay):
 def getPOT(input_dir, file_name, tree_name):
     tree_pot = ROOT.TChain(tree_name + "/pottree","pottree")
     tree_pot.Add( input_dir + file_name)
-    h_x = ROOT.TH1F("h_x","Pot",1000,0,1e17)
+    h_x = ROOT.TH1F("h_x","Pot",1000,0,1e21)
     tree_pot.Draw('pot>>h_x','1')
     mean_pot = h_x.GetMean()
     entries_pot = h_x.GetEntries()
