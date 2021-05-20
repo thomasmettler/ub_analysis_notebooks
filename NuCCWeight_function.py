@@ -13,7 +13,9 @@ globale = imp.load_source('globale','/home/tmettler/Desktop/uBoone/do_plots/glob
 
 
 #pot_data = 8.649e+18
-pot_data = 7.644e+18
+#pot_data = 7.644e+18
+
+pot_data =  2.144e+20  # best with tor875
 
 def draw_adding():
     prelim = ROOT.TLatex(0.9,0.93, "MicroBooNE Preliminary");
@@ -349,11 +351,13 @@ def make_stacked_histo_weightV2(cut,variable,weight,title,xstart,xend,xbins,file
     h_data_func.GetYaxis().SetLabelSize(0.06);
     h_data_func.GetYaxis().SetTitleSize(0.06);
     h_data_func.GetYaxis().SetTitleOffset(0.8);
+    h_data_func.GetYaxis().SetTitleOffset(1.01);
     h_data_func.GetXaxis().SetLabelOffset(999);
     h_data_func.GetXaxis().SetTitleOffset(999);
     h_data_func.GetXaxis().SetLabelSize(0);
     h_data_func.GetXaxis().SetTitleSize(0);
     pad1.SetBottomMargin(0.03);
+    pad1.SetLeftMargin(0.12);
     pad1.SetTopMargin(0.1)
     h_data_func.SetLineColor(ROOT.kBlack)
     h_data_func.SetLineWidth(4)
@@ -389,6 +393,8 @@ def make_stacked_histo_weightV2(cut,variable,weight,title,xstart,xend,xbins,file
     pad2.SetGrid(1)
     pad2.SetTopMargin(0.04)
     pad2.SetBottomMargin(0.4)
+    pad2.SetLeftMargin(0.12);
+    pad2.SetLeftMargin(0.12);
     pad2.Draw()
     pad2.cd()
     # Draw data - MC difference
@@ -539,11 +545,13 @@ def make_stacked_histo_onoff(cut,variable,weight,title,xstart,xend,xbins,file_na
     h_data_func.GetYaxis().SetLabelSize(0.06);
     h_data_func.GetYaxis().SetTitleSize(0.06);
     h_data_func.GetYaxis().SetTitleOffset(0.8);
+    h_data_func.GetYaxis().SetTitleOffset(1.01);
     h_data_func.GetXaxis().SetLabelOffset(999);
     h_data_func.GetXaxis().SetTitleOffset(999);
     h_data_func.GetXaxis().SetLabelSize(0);
     h_data_func.GetXaxis().SetTitleSize(0);
     pad1.SetBottomMargin(0.03);
+    pad1.SetLeftMargin(0.12);
     pad1.SetTopMargin(0.1)
     h_data_func.SetLineColor(ROOT.kBlack)
     h_data_func.SetLineWidth(4)
@@ -579,6 +587,7 @@ def make_stacked_histo_onoff(cut,variable,weight,title,xstart,xend,xbins,file_na
     pad2.SetGrid(1)
     pad2.SetTopMargin(0.04)
     pad2.SetBottomMargin(0.4)
+    pad2.SetLeftMargin(0.12);
     pad2.Draw()
     pad2.cd()
     # Draw data - MC difference
@@ -773,11 +782,13 @@ def make_stacked_histo_weight_MCC8(cut,variable,weight,title,xstart,xend,xbins,f
     h_data_func.GetYaxis().SetLabelSize(0.06);
     h_data_func.GetYaxis().SetTitleSize(0.06);
     h_data_func.GetYaxis().SetTitleOffset(0.8);
+    h_data_func.GetYaxis().SetTitleOffset(1.01);
     h_data_func.GetXaxis().SetLabelOffset(999);
     h_data_func.GetXaxis().SetTitleOffset(999);
     h_data_func.GetXaxis().SetLabelSize(0);
     h_data_func.GetXaxis().SetTitleSize(0);
     pad1.SetBottomMargin(0.03);
+    pad1.SetLeftMargin(0.12);
     pad1.SetTopMargin(0.1)
     h_data_func.SetLineColor(ROOT.kBlack)
     h_data_func.SetLineWidth(4)
@@ -817,6 +828,7 @@ def make_stacked_histo_weight_MCC8(cut,variable,weight,title,xstart,xend,xbins,f
     pad2.SetGrid(1)
     pad2.SetTopMargin(0.04)
     pad2.SetBottomMargin(0.4)
+    pad2.SetLeftMargin(0.12);
     pad2.Draw()
     pad2.cd()
     # Draw data - MC difference
@@ -966,11 +978,13 @@ def make_stacked_histo_weight_MCC8_V(cut,variable,weight,title,xstart,xend,xbins
     h_data_func.GetYaxis().SetLabelSize(0.06);
     h_data_func.GetYaxis().SetTitleSize(0.06);
     h_data_func.GetYaxis().SetTitleOffset(0.8);
+    h_data_func.GetYaxis().SetTitleOffset(1.01);
     h_data_func.GetXaxis().SetLabelOffset(999);
     h_data_func.GetXaxis().SetTitleOffset(999);
     h_data_func.GetXaxis().SetLabelSize(0);
     h_data_func.GetXaxis().SetTitleSize(0);
     pad1.SetBottomMargin(0.03);
+    pad1.SetLeftMargin(0.12);
     pad1.SetTopMargin(0.1)
     h_data_func.SetLineColor(ROOT.kBlack)
     h_data_func.SetLineWidth(4)
@@ -1009,6 +1023,7 @@ def make_stacked_histo_weight_MCC8_V(cut,variable,weight,title,xstart,xend,xbins
     pad2.SetGrid(1)
     pad2.SetTopMargin(0.04)
     pad2.SetBottomMargin(0.4)
+    pad2.SetLeftMargin(0.12);
     pad2.Draw()
     pad2.cd()
     # Draw data - MC difference
@@ -1186,11 +1201,13 @@ def make_stacked_histo_particle(cut,variable,weight,title,xstart,xend,xbins,file
     h_data_func.GetYaxis().SetLabelSize(0.06);
     h_data_func.GetYaxis().SetTitleSize(0.06);
     h_data_func.GetYaxis().SetTitleOffset(0.8);
+    h_data_func.GetYaxis().SetTitleOffset(1.01);
     h_data_func.GetXaxis().SetLabelOffset(999);
     h_data_func.GetXaxis().SetTitleOffset(999);
     h_data_func.GetXaxis().SetLabelSize(0);
     h_data_func.GetXaxis().SetTitleSize(0);
     pad1.SetBottomMargin(0.03);
+    pad1.SetLeftMargin(0.12);
     pad1.SetTopMargin(0.1)
     h_data_func.SetLineColor(ROOT.kBlack)
     h_data_func.SetLineWidth(4)
@@ -1226,6 +1243,7 @@ def make_stacked_histo_particle(cut,variable,weight,title,xstart,xend,xbins,file
     pad2.SetGrid(1)
     pad2.SetTopMargin(0.04)
     pad2.SetBottomMargin(0.4)
+    pad2.SetLeftMargin(0.12);
     pad2.Draw()
     pad2.cd()
     # Draw data - MC difference
@@ -1270,6 +1288,7 @@ def make_stacked_histo_MCC8_pub(cut,variable,weight,title,xstart,xend,xbins,file
     #h_dirt_func = ROOT.TH1F("h_dirt_func",title,binnum,array('f',mom_bins))
     
     weight_name = 'EventWeight*TunedCentralValue_Genie'
+    #weight_name = '1'
     h_data_func = ROOT.TH1F("h_data_func",title,xbins,xstart,xend)
     h_ext_func = ROOT.TH1F("h_ext_func",title,xbins,xstart,xend)
     h_dirt_func = ROOT.TH1F("h_dirt_func",title,xbins,xstart,xend)
@@ -1376,7 +1395,7 @@ def make_stacked_histo_MCC8_pub(cut,variable,weight,title,xstart,xend,xbins,file
     #prepare the canvas with thw pads
     c1 = ROOT.TCanvas("c1","c1",1600,1200)
     c1.SetGrid(1)
-    c1.SetLeftMargin(0.14)
+    c1.SetLeftMargin(0.25)
     c1.SetRightMargin(0.18)
     c1.SetBottomMargin(0.14)
     # first pad
@@ -1392,15 +1411,19 @@ def make_stacked_histo_MCC8_pub(cut,variable,weight,title,xstart,xend,xbins,file
         h_data_func.SetMaximum(h_data_func.GetMaximum()*1.5)
     else:
         h_data_func.SetMaximum(h_data_func.GetMaximum()*1.3)
+        #h_data_func.SetMinimum(1.0/h_data_func.GetMaximum()/1.3)
+    h_data_func.SetMaximum(16000)
     
     h_data_func.GetYaxis().SetLabelSize(0.06);
     h_data_func.GetYaxis().SetTitleSize(0.06);
-    h_data_func.GetYaxis().SetTitleOffset(0.8);
+    h_data_func.GetYaxis().SetTitleOffset(1.01);
+    h_data_func.GetYaxis().SetTitleOffset(1.01);
     h_data_func.GetXaxis().SetLabelOffset(999);
     h_data_func.GetXaxis().SetTitleOffset(999);
     h_data_func.GetXaxis().SetLabelSize(0);
     h_data_func.GetXaxis().SetTitleSize(0);
     pad1.SetBottomMargin(0.03);
+    pad1.SetLeftMargin(0.12);
     pad1.SetTopMargin(0.1)
     h_data_func.SetLineColor(ROOT.kBlack)
     h_data_func.SetLineWidth(2)
@@ -1419,13 +1442,14 @@ def make_stacked_histo_MCC8_pub(cut,variable,weight,title,xstart,xend,xbins,file
     prelim.SetTextAlign(32);
     #prelim.SetTextSize(0.04631579);
     prelim.Draw()
-    pot_latex = ROOT.TLatex(.10, .91,'Accumulated POT: '+str(pot_data)) 
-    pot_latex.SetTextFont(62);
-    pot_latex.SetTextColor(ROOT.kGray+2);
-    pot_latex.SetNDC();
-    pot_latex.SetTextSize(1/15.);
-    pot_latex.SetTextAlign(10) #;//left adjusted
-    pot_latex.Draw();
+    if variable != 'crthit_vertex_zcut' and variable != 'nr_crthit_top':
+        pot_latex = ROOT.TLatex(.10, .91,'Accumulated POT: '+str(pot_data)) 
+        pot_latex.SetTextFont(62);
+        pot_latex.SetTextColor(ROOT.kGray+2);
+        pot_latex.SetNDC();
+        pot_latex.SetTextSize(1/15.);
+        pot_latex.SetTextAlign(10) #;//left adjusted
+        pot_latex.Draw();
     
     # second pad
     c1.cd()
@@ -1435,6 +1459,8 @@ def make_stacked_histo_MCC8_pub(cut,variable,weight,title,xstart,xend,xbins,file
     pad2.SetGrid(1)
     pad2.SetTopMargin(0.04)
     pad2.SetBottomMargin(0.4)
+    pad2.SetLeftMargin(0.12);
+    pad2.SetLeftMargin(0.12);
     pad2.Draw()
     pad2.cd()
     # Draw data - MC difference
@@ -1456,6 +1482,12 @@ def make_stacked_histo_MCC8_pub(cut,variable,weight,title,xstart,xend,xbins,file
     h_div_func.GetXaxis().SetLabelSize(0.15)
     h_div_func.GetXaxis().SetTitleOffset(1)
     
+    if variable == 'TrackMomRange_mu' or variable == 'TrackMomMCS_mom' or variable == 'Nu_Vx_sce' or variable == 'Nu_Vy_sce' or variable == 'Nu_Vz_sce':
+        if h_div_func.GetMinimum() == 0:
+            h_div_func.SetMinimum(1.0/(h_div_func.GetMaximum()*1.3))
+    h_div_func.SetMinimum(0.75)
+    h_div_func.SetMaximum(1.25)
+    
     h_div_func.Draw('E1')
     c1.Draw()
     c1.SaveAs(globale.outputdir_png+ file_name + ".png")
@@ -1471,6 +1503,691 @@ def make_stacked_histo_MCC8_pub(cut,variable,weight,title,xstart,xend,xbins,file
     #sel.Delete()
     return normalization
     
+def make_stacked_histo_MCC8_pub_tmp(cut,variable,weight,title,xstart,xend,xbins,file_name,side='right'):
+
+    #mom_bins = [ 0.00, 0.18, 0.30, 0.45, 0.77, 1.28, 2.50 ]
+    #binnum = len(mom_bins) - 1
+    #initialize the 1d histograms
+    #h_data_func = ROOT.TH1F("h_data_func",title,binnum,array('f',mom_bins))
+    #h_ext_func = ROOT.TH1F("h_ext_func",title,binnum,array('f',mom_bins))
+    #h_dirt_func = ROOT.TH1F("h_dirt_func",title,binnum,array('f',mom_bins))
+    
+    weight_name = 'EventWeight*TunedCentralValue_Genie'
+    #weight_name = '1'
+    h_data_func = ROOT.TH1F("h_data_func",title,xbins,xstart,xend)
+    h_ext_func = ROOT.TH1F("h_ext_func",title,xbins,xstart,xend)
+    h_dirt_func = ROOT.TH1F("h_dirt_func",title,xbins,xstart,xend)
+    h_overlay_func = {} # make an array of histograms for the different interactions
+    for x in globale.overlay_signals:
+        h_overlay_func[x] = ROOT.TH1F(x,title,xbins,xstart,xend)
+        #h_overlay_func[x] = ROOT.TH1F(x,title,binnum,array('f',mom_bins))
+    globale.data_out.Draw(variable+'>>h_data_func',cut,'')
+    globale.ext_out.Draw(variable+'>>h_ext_func',cut,'')
+    globale.dirt_out.Draw(variable+'>>h_dirt_func',weight_name+'*('+cut+')','')
+
+    cut = cut +' && '
+    for x in globale.overlay_signals:
+        histo = x
+        globale.overlay_out.Draw(variable+'>>'+histo,weight_name+'*('+cut+x+')','')
+    # prepare the stacked histogram
+    hs = ROOT.THStack("hs","");
+    h_data_func.SetLineWidth(1)
+    
+    h_data_func.SetMarkerStyle(ROOT.kFullCircle);
+    h_data_func.SetMarkerSize(0.9);
+
+    #scale the histograms
+    h_data_func.Sumw2()
+    h_data_func.Scale(globale.scale[globale.data])
+    h_ext_func.Sumw2()
+    h_ext_func.Scale(globale.scale[globale.ext])
+    h_dirt_func.Sumw2()
+    h_dirt_func.Scale(globale.scale[globale.dirt])
+    #fill the stacked histogram
+    hs.Add(h_ext_func)
+    hs.Add(h_dirt_func)
+    mc_events = 0
+    mc_event_list = {}
+    for i,x in enumerate(globale.overlay_signals):
+        #h_overlay_func[x].Sumw2()
+        h_overlay_func[x].Scale(globale.scale[globale.overlay])
+        mc_event_list[x] = h_overlay_func[x].GetSumOfWeights()
+        mc_events = mc_events+mc_event_list[x]
+        hs.Add(h_overlay_func[x])
+    # use marcos colors:
+    h_ext_func.SetFillColor(ROOT.kBlue+2)
+    h_ext_func.SetLineColor(ROOT.kBlue+2)
+    h_ext_func.SetFillStyle(3004)
+    
+    h_dirt_func.SetLineColor(ROOT.kOrange+2);
+    h_dirt_func.SetFillColor(ROOT.kOrange+2);
+    
+    h_overlay_func['numu_signal'].SetFillColor(ROOT.kRed)
+    h_overlay_func['numu_signal'].SetLineColor(ROOT.kRed)
+    
+    h_overlay_func['numu_nomuon'].SetFillColor(ROOT.kRed+2)
+    h_overlay_func['numu_nomuon'].SetLineColor(ROOT.kRed+2)
+    
+    h_overlay_func['numu_nue'].SetFillColor(ROOT.kMagenta+1)
+    h_overlay_func['numu_nue'].SetLineColor(ROOT.kMagenta+1)
+    
+    h_overlay_func['numu_antinu'].SetFillColor(ROOT.kOrange-3)
+    h_overlay_func['numu_antinu'].SetLineColor(ROOT.kOrange-3)
+    
+    h_overlay_func['numu_nc'].SetFillColor(ROOT.kGray)
+    h_overlay_func['numu_nc'].SetLineColor(ROOT.kGray)
+    
+    h_overlay_func['numu_cosmic'].SetFillColor(ROOT.kBlue)
+    h_overlay_func['numu_cosmic'].SetLineColor(ROOT.kBlue)
+    
+    h_overlay_func['numu_ov'].SetFillColor(ROOT.kGreen+2)
+    h_overlay_func['numu_ov'].SetLineColor(ROOT.kGreen+2)
+
+    # calculate the data - MC ratio
+    data_events = h_data_func.GetEntries()*globale.scale[globale.data]
+    ext_events = h_ext_func.GetEntries()*globale.scale[globale.ext]
+    dirt_events = h_dirt_func.GetSumOfWeights()
+    mc_events = mc_events + dirt_events
+    normalization = (data_events)/(mc_events+ext_events)
+    print 'Normalization (data)/(mc +ext) = ', normalization
+    if side == 'left':
+        legend = ROOT.TLegend(0.15,0.30,0.5,0.9) # LEGEND LEFT
+        #legend = ROOT.TLegend(0.15,0.65,0.45,0.9) # LEGEND LEFT
+    else:
+        #legend = ROOT.TLegend(0.6,0.65,0.9,0.9); #LEGEND RIGHT
+        legend = ROOT.TLegend(0.55,0.30,0.9,0.9)
+    if variable == 'TrackPID_chiproton' or variable == 'NuScore' or variable == 'TrackPhi' or variable == 'Nu_Vx_sce' or variable == 'Nu_Vy_sce' or variable == 'Nu_Vz_sce':
+        legend = ROOT.TLegend(0.15,0.68,0.85,0.9) # LEGEND LEFT
+        legend.SetNColumns(2)
+    #data_name = 'Data: {0:0.1f}'.format(data_events)
+    data_name = 'Data (Beam-on, stat. only)'#: {0:0.1f}'.format(data_events)
+    #ext_name = 'Data (Beam off):'+' {0:0.1f}'.format(ext_events)+', {0:0.1f}%'.format(ext_events*100.0/(mc_events+ext_events))
+    #dirt_name = 'Dirt:'+' {0:0.1f}'.format(dirt_events)+', {0:0.1f}%'.format(dirt_events*100.0/(mc_events+ext_events))
+    ext_name = 'Data (Beam-off): {0:0.1f}%'.format(ext_events*100.0/(mc_events+ext_events))# +' {0:0.1f}'.format(ext_events)
+    dirt_name = 'Dirt: {0:0.1f}%'.format(dirt_events*100.0/(mc_events+ext_events))#+' {0:0.1f}'.format(dirt_events)
+
+    overlay_signals_name = ['#nu_{#mu} CC (signal)','#nu_{#mu} CC (not #mu)','#nu_{e}, #bar{#nu_{e}} CC','#bar{#nu_{#mu}} CC','NC', 'OUTFV', 'Cosmic']
+    overlay_signals_func = ['numu_signal','numu_nomuon','numu_nue','numu_antinu','numu_nc','numu_ov','numu_cosmic']
+
+    for i,x in enumerate(overlay_signals_func):
+        #ov_name = '%20s'%overlay_signals_name[i]+': {0:0.1f}'.format(mc_event_list[x])+': {0:0.1f}%'.format(mc_event_list[x]*100.0/(mc_events+ext_events))
+        #ov_name = overlay_signals_name[i]+':\t {0:0.1f}'.format(mc_event_list[x])+',\t {0:0.1f}%'.format(mc_event_list[x]*100.0/(mc_events+ext_events))
+        ov_name = overlay_signals_name[i]+': {0:0.1f}%'.format(mc_event_list[x]*100.0/(mc_events+ext_events))# + ': {0:0.1f}'.format(mc_event_list[x])
+        legend.AddEntry(h_overlay_func[x],ov_name,"f");
+    legend.AddEntry(h_dirt_func,dirt_name,"f")
+    legend.AddEntry(h_ext_func,ext_name,"f")
+    legend.AddEntry(h_data_func,data_name,"lep")
+    #prepare the canvas with thw pads
+    c1 = ROOT.TCanvas("c1","c1",1600,1200)
+    c1.SetGrid(1)
+    c1.SetLeftMargin(0.25)
+    c1.SetRightMargin(0.18)
+    c1.SetBottomMargin(0.14)
+    #c1.SetLogy(1)
+    # first pad
+    c1.cd()
+    
+    pad1 = ROOT.TPad('pad1','pad1',0,0.35,1,1)
+    pad1.SetGrid(1)
+    #pad1.SetLogy(1)
+    ROOT.gPad.SetLogy(1)
+    pad1.Draw()
+    pad1.cd()
+    ROOT.gPad.SetLogy(1)
+    # draw fisrt histogram with data points and stacked ext and MC
+    h_data_func.SetYTitle("Entries per bin")
+    h_data_func.SetMinimum(50)
+    if variable == 'TrackPID_chiproton' or variable == 'TrackPhi' or variable == 'Nu_Vx_sce' or variable == 'Nu_Vy_sce' or variable == 'Nu_Vz_sce':
+        h_data_func.SetMaximum(h_data_func.GetMaximum()*1.5)
+    else:
+        h_data_func.SetMaximum(100000)
+        #h_data_func.SetMinimum(1.0/h_data_func.GetMaximum()/1.3)
+    
+    h_data_func.GetYaxis().SetLabelSize(0.06);
+    h_data_func.GetYaxis().SetTitleSize(0.06);
+    h_data_func.GetYaxis().SetTitleOffset(1.01);
+    h_data_func.GetYaxis().SetTitleOffset(1.01);
+    h_data_func.GetXaxis().SetLabelOffset(999);
+    h_data_func.GetXaxis().SetTitleOffset(999);
+    h_data_func.GetXaxis().SetLabelSize(0);
+    h_data_func.GetXaxis().SetTitleSize(0);
+    pad1.SetBottomMargin(0.03);
+    pad1.SetLeftMargin(0.12);
+    pad1.SetTopMargin(0.1)
+    h_data_func.SetLineColor(ROOT.kBlack)
+    h_data_func.SetLineWidth(2)
+    ROOT.gStyle.SetEndErrorSize(9)
+    
+    h_data_func.Draw('E1')
+    legend.Draw();
+    hs.Draw('same hist')
+    h_data_func.Draw('E1 same')
+
+    prelim = ROOT.TLatex(0.9,0.93, "MicroBooNE Preliminary");
+    prelim.SetTextFont(62);
+    prelim.SetTextColor(ROOT.kGray+2);
+    prelim.SetNDC();
+    prelim.SetTextSize(1/15.);
+    prelim.SetTextAlign(32);
+    #prelim.SetTextSize(0.04631579);
+    prelim.Draw()
+    if variable != 'crthit_vertex_zcut' and variable != 'nr_crthit_top':
+        pot_latex = ROOT.TLatex(.10, .91,'Accumulated POT: '+str(pot_data)) 
+        pot_latex.SetTextFont(62);
+        pot_latex.SetTextColor(ROOT.kGray+2);
+        pot_latex.SetNDC();
+        pot_latex.SetTextSize(1/15.);
+        pot_latex.SetTextAlign(10) #;//left adjusted
+        pot_latex.Draw();
+    
+    # second pad
+    c1.cd()
+    #c1.SetLogy(1)
+    h_data_func.GetXaxis().SetLabelOffset(0);
+    h_data_func.GetXaxis().SetTitleOffset(0);
+    pad2 = ROOT.TPad('pad2','pad2',0,0,1,0.35)
+    pad2.SetGrid(1)
+    pad2.SetTopMargin(0.04)
+    pad2.SetBottomMargin(0.4)
+    pad2.SetLeftMargin(0.12);
+    pad2.SetLeftMargin(0.12);
+    pad2.Draw()
+    pad2.cd()
+    # Draw data - MC difference
+    h_tot_func = h_ext_func.Clone()
+    h_div_func = h_data_func.Clone()
+    h_tot_func.Add(h_dirt_func)
+    for i,x in enumerate(globale.overlay_signals):
+        h_tot_func.Add(h_overlay_func[x])
+    h_div_func.Divide(h_tot_func )
+    #h_test = hs.GetHistogram().Clone()
+    #h_div_func.Divide(h_test )
+    h_div_func = make_stacked_histo_weight_pad2(h_div_func)
+    h_div_func.SetXTitle(title)
+    h_div_func.GetXaxis().CenterTitle()
+    h_div_func.GetYaxis().SetTitleSize(0.1)
+    h_div_func.GetYaxis().SetTitleOffset(0.3)
+    h_div_func.GetYaxis().SetLabelSize(0.07)
+    h_div_func.GetXaxis().SetTitleSize(0.15)
+    h_div_func.GetXaxis().SetLabelSize(0.15)
+    h_div_func.GetXaxis().SetTitleOffset(1)
+    
+    if variable == 'TrackMomRange_mu' or variable == 'TrackMomMCS_mom' or variable == 'Nu_Vx_sce' or variable == 'Nu_Vy_sce' or variable == 'Nu_Vz_sce':
+        if h_div_func.GetMinimum() == 0:
+            h_div_func.SetMinimum(1.0/(h_div_func.GetMaximum()*1.3))
+    h_div_func.SetMinimum(0.0)
+    h_div_func.SetMaximum(2.0)
+    
+    h_div_func.Draw('E1')
+    c1.Draw()
+    c1.SaveAs(globale.outputdir_png+ file_name + ".png")
+    c1.SaveAs(globale.outputdir_pdf+ file_name + ".pdf")
+    c1.SaveAs(globale.outputdir_root+ file_name + ".root")
+    
+    h_data_func.Delete()
+    h_ext_func.Delete()
+    h_dirt_func.Delete()
+    #h_overlay_func = {} # make an array of histograms for the different interactions
+    for x in globale.overlay_signals:
+        h_overlay_func[x].Delete()
+    #sel.Delete()
+    return normalization
+    
+    
+    
+def make_stacked_histo_MCC8_pub_corr1(cut,variable,weight,title,xstart,xend,xbins,file_name,side='right'):
+
+    #mom_bins = [ 0.00, 0.18, 0.30, 0.45, 0.77, 1.28, 2.50 ]
+    #binnum = len(mom_bins) - 1
+    #initialize the 1d histograms
+    #h_data_func = ROOT.TH1F("h_data_func",title,binnum,array('f',mom_bins))
+    #h_ext_func = ROOT.TH1F("h_ext_func",title,binnum,array('f',mom_bins))
+    #h_dirt_func = ROOT.TH1F("h_dirt_func",title,binnum,array('f',mom_bins))
+    
+    weight_name = 'EventWeight*TunedCentralValue_Genie'
+    variable_MC = '(sqrt(TrackMomMCS_mom*TrackMomMCS_mom + 0.105*0.105)-0.105)'
+    variable_MC = 'sqrt((TrackMomMCS_mom+0.105)*(TrackMomMCS_mom+0.105)-0.105*0.105)'
+    #weight_name = '1'
+    h_data_func = ROOT.TH1F("h_data_func",title,xbins,xstart,xend)
+    h_ext_func = ROOT.TH1F("h_ext_func",title,xbins,xstart,xend)
+    h_dirt_func = ROOT.TH1F("h_dirt_func",title,xbins,xstart,xend)
+    h_overlay_func = {} # make an array of histograms for the different interactions
+    for x in globale.overlay_signals:
+        h_overlay_func[x] = ROOT.TH1F(x,title,xbins,xstart,xend)
+        #h_overlay_func[x] = ROOT.TH1F(x,title,binnum,array('f',mom_bins))
+    globale.data_out.Draw(variable+'>>h_data_func',cut,'')
+    globale.ext_out.Draw(variable+'>>h_ext_func',cut,'')
+    globale.dirt_out.Draw(variable_MC+'>>h_dirt_func',weight_name+'*('+cut+')','')
+
+    cut = cut +' && '
+    for x in globale.overlay_signals:
+        histo = x
+        globale.overlay_out.Draw(variable_MC+'>>'+histo,weight_name+'*('+cut+x+')','')
+    # prepare the stacked histogram
+    hs = ROOT.THStack("hs","");
+    h_data_func.SetLineWidth(1)
+    
+    h_data_func.SetMarkerStyle(ROOT.kFullCircle);
+    h_data_func.SetMarkerSize(0.9);
+
+    #scale the histograms
+    h_data_func.Sumw2()
+    h_data_func.Scale(globale.scale[globale.data])
+    h_ext_func.Sumw2()
+    h_ext_func.Scale(globale.scale[globale.ext])
+    h_dirt_func.Sumw2()
+    h_dirt_func.Scale(globale.scale[globale.dirt])
+    #fill the stacked histogram
+    hs.Add(h_ext_func)
+    hs.Add(h_dirt_func)
+    mc_events = 0
+    mc_event_list = {}
+    for i,x in enumerate(globale.overlay_signals):
+        #h_overlay_func[x].Sumw2()
+        h_overlay_func[x].Scale(globale.scale[globale.overlay])
+        mc_event_list[x] = h_overlay_func[x].GetSumOfWeights()
+        mc_events = mc_events+mc_event_list[x]
+        hs.Add(h_overlay_func[x])
+    # use marcos colors:
+    h_ext_func.SetFillColor(ROOT.kBlue+2)
+    h_ext_func.SetLineColor(ROOT.kBlue+2)
+    h_ext_func.SetFillStyle(3004)
+    
+    h_dirt_func.SetLineColor(ROOT.kOrange+2);
+    h_dirt_func.SetFillColor(ROOT.kOrange+2);
+    
+    h_overlay_func['numu_signal'].SetFillColor(ROOT.kRed)
+    h_overlay_func['numu_signal'].SetLineColor(ROOT.kRed)
+    
+    h_overlay_func['numu_nomuon'].SetFillColor(ROOT.kRed+2)
+    h_overlay_func['numu_nomuon'].SetLineColor(ROOT.kRed+2)
+    
+    h_overlay_func['numu_nue'].SetFillColor(ROOT.kMagenta+1)
+    h_overlay_func['numu_nue'].SetLineColor(ROOT.kMagenta+1)
+    
+    h_overlay_func['numu_antinu'].SetFillColor(ROOT.kOrange-3)
+    h_overlay_func['numu_antinu'].SetLineColor(ROOT.kOrange-3)
+    
+    h_overlay_func['numu_nc'].SetFillColor(ROOT.kGray)
+    h_overlay_func['numu_nc'].SetLineColor(ROOT.kGray)
+    
+    h_overlay_func['numu_cosmic'].SetFillColor(ROOT.kBlue)
+    h_overlay_func['numu_cosmic'].SetLineColor(ROOT.kBlue)
+    
+    h_overlay_func['numu_ov'].SetFillColor(ROOT.kGreen+2)
+    h_overlay_func['numu_ov'].SetLineColor(ROOT.kGreen+2)
+
+    # calculate the data - MC ratio
+    data_events = h_data_func.GetEntries()*globale.scale[globale.data]
+    ext_events = h_ext_func.GetEntries()*globale.scale[globale.ext]
+    dirt_events = h_dirt_func.GetSumOfWeights()
+    mc_events = mc_events + dirt_events
+    normalization = (data_events)/(mc_events+ext_events)
+    print 'Normalization (data)/(mc +ext) = ', normalization
+    if side == 'left':
+        legend = ROOT.TLegend(0.15,0.30,0.5,0.9) # LEGEND LEFT
+        #legend = ROOT.TLegend(0.15,0.65,0.45,0.9) # LEGEND LEFT
+    else:
+        #legend = ROOT.TLegend(0.6,0.65,0.9,0.9); #LEGEND RIGHT
+        legend = ROOT.TLegend(0.55,0.30,0.9,0.9)
+    if variable == 'TrackPID_chiproton' or variable == 'NuScore' or variable == 'TrackPhi' or variable == 'Nu_Vx_sce' or variable == 'Nu_Vy_sce' or variable == 'Nu_Vz_sce':
+        legend = ROOT.TLegend(0.15,0.68,0.85,0.9) # LEGEND LEFT
+        legend.SetNColumns(2)
+    #data_name = 'Data: {0:0.1f}'.format(data_events)
+    data_name = 'Data (Beam-on, stat. only)'#: {0:0.1f}'.format(data_events)
+    #ext_name = 'Data (Beam off):'+' {0:0.1f}'.format(ext_events)+', {0:0.1f}%'.format(ext_events*100.0/(mc_events+ext_events))
+    #dirt_name = 'Dirt:'+' {0:0.1f}'.format(dirt_events)+', {0:0.1f}%'.format(dirt_events*100.0/(mc_events+ext_events))
+    ext_name = 'Data (Beam-off): {0:0.1f}%'.format(ext_events*100.0/(mc_events+ext_events))# +' {0:0.1f}'.format(ext_events)
+    dirt_name = 'Dirt: {0:0.1f}%'.format(dirt_events*100.0/(mc_events+ext_events))#+' {0:0.1f}'.format(dirt_events)
+
+    overlay_signals_name = ['#nu_{#mu} CC (signal)','#nu_{#mu} CC (not #mu)','#nu_{e}, #bar{#nu_{e}} CC','#bar{#nu_{#mu}} CC','NC', 'OUTFV', 'Cosmic']
+    overlay_signals_func = ['numu_signal','numu_nomuon','numu_nue','numu_antinu','numu_nc','numu_ov','numu_cosmic']
+
+    for i,x in enumerate(overlay_signals_func):
+        #ov_name = '%20s'%overlay_signals_name[i]+': {0:0.1f}'.format(mc_event_list[x])+': {0:0.1f}%'.format(mc_event_list[x]*100.0/(mc_events+ext_events))
+        #ov_name = overlay_signals_name[i]+':\t {0:0.1f}'.format(mc_event_list[x])+',\t {0:0.1f}%'.format(mc_event_list[x]*100.0/(mc_events+ext_events))
+        ov_name = overlay_signals_name[i]+': {0:0.1f}%'.format(mc_event_list[x]*100.0/(mc_events+ext_events))# + ': {0:0.1f}'.format(mc_event_list[x])
+        legend.AddEntry(h_overlay_func[x],ov_name,"f");
+    legend.AddEntry(h_dirt_func,dirt_name,"f")
+    legend.AddEntry(h_ext_func,ext_name,"f")
+    legend.AddEntry(h_data_func,data_name,"lep")
+    #prepare the canvas with thw pads
+    c1 = ROOT.TCanvas("c1","c1",1600,1200)
+    c1.SetGrid(1)
+    c1.SetLeftMargin(0.25)
+    c1.SetRightMargin(0.18)
+    c1.SetBottomMargin(0.14)
+    # first pad
+    c1.cd()
+    pad1 = ROOT.TPad('pad1','pad1',0,0.35,1,1)
+    pad1.SetGrid(1)
+    pad1.Draw()
+    pad1.cd()
+    # draw fisrt histogram with data points and stacked ext and MC
+    h_data_func.SetYTitle("Entries per bin")
+    h_data_func.SetMinimum(0)
+    if variable == 'TrackPID_chiproton' or variable == 'TrackPhi' or variable == 'Nu_Vx_sce' or variable == 'Nu_Vy_sce' or variable == 'Nu_Vz_sce':
+        h_data_func.SetMaximum(h_data_func.GetMaximum()*1.5)
+    else:
+        h_data_func.SetMaximum(h_data_func.GetMaximum()*1.3)
+        #h_data_func.SetMinimum(1.0/h_data_func.GetMaximum()/1.3)
+    
+    h_data_func.GetYaxis().SetLabelSize(0.06);
+    h_data_func.GetYaxis().SetTitleSize(0.06);
+    h_data_func.GetYaxis().SetTitleOffset(1.01);
+    h_data_func.GetYaxis().SetTitleOffset(1.01);
+    h_data_func.GetXaxis().SetLabelOffset(999);
+    h_data_func.GetXaxis().SetTitleOffset(999);
+    h_data_func.GetXaxis().SetLabelSize(0);
+    h_data_func.GetXaxis().SetTitleSize(0);
+    pad1.SetBottomMargin(0.03);
+    pad1.SetLeftMargin(0.12);
+    pad1.SetTopMargin(0.1)
+    h_data_func.SetLineColor(ROOT.kBlack)
+    h_data_func.SetLineWidth(2)
+    ROOT.gStyle.SetEndErrorSize(9)
+    
+    h_data_func.Draw('E1')
+    legend.Draw();
+    hs.Draw('same hist')
+    h_data_func.Draw('E1 same')
+
+    prelim = ROOT.TLatex(0.9,0.93, "MicroBooNE Preliminary");
+    prelim.SetTextFont(62);
+    prelim.SetTextColor(ROOT.kGray+2);
+    prelim.SetNDC();
+    prelim.SetTextSize(1/15.);
+    prelim.SetTextAlign(32);
+    #prelim.SetTextSize(0.04631579);
+    prelim.Draw()
+    if variable != 'crthit_vertex_zcut' and variable != 'nr_crthit_top':
+        pot_latex = ROOT.TLatex(.10, .91,'Accumulated POT: '+str(pot_data)) 
+        pot_latex.SetTextFont(62);
+        pot_latex.SetTextColor(ROOT.kGray+2);
+        pot_latex.SetNDC();
+        pot_latex.SetTextSize(1/15.);
+        pot_latex.SetTextAlign(10) #;//left adjusted
+        pot_latex.Draw();
+    
+    # second pad
+    c1.cd()
+    h_data_func.GetXaxis().SetLabelOffset(0);
+    h_data_func.GetXaxis().SetTitleOffset(0);
+    pad2 = ROOT.TPad('pad2','pad2',0,0,1,0.35)
+    pad2.SetGrid(1)
+    pad2.SetTopMargin(0.04)
+    pad2.SetBottomMargin(0.4)
+    pad2.SetLeftMargin(0.12);
+    pad2.SetLeftMargin(0.12);
+    pad2.Draw()
+    pad2.cd()
+    # Draw data - MC difference
+    h_tot_func = h_ext_func.Clone()
+    h_div_func = h_data_func.Clone()
+    h_tot_func.Add(h_dirt_func)
+    for i,x in enumerate(globale.overlay_signals):
+        h_tot_func.Add(h_overlay_func[x])
+    h_div_func.Divide(h_tot_func )
+    #h_test = hs.GetHistogram().Clone()
+    #h_div_func.Divide(h_test )
+    h_div_func = make_stacked_histo_weight_pad2(h_div_func)
+    h_div_func.SetXTitle(title)
+    h_div_func.GetXaxis().CenterTitle()
+    h_div_func.GetYaxis().SetTitleSize(0.1)
+    h_div_func.GetYaxis().SetTitleOffset(0.3)
+    h_div_func.GetYaxis().SetLabelSize(0.07)
+    h_div_func.GetXaxis().SetTitleSize(0.15)
+    h_div_func.GetXaxis().SetLabelSize(0.15)
+    h_div_func.GetXaxis().SetTitleOffset(1)
+    
+    if variable == 'TrackMomRange_mu' or variable == 'TrackMomMCS_mom' or variable == 'Nu_Vx_sce' or variable == 'Nu_Vy_sce' or variable == 'Nu_Vz_sce':
+        if h_div_func.GetMinimum() == 0:
+            h_div_func.SetMinimum(1.0/(h_div_func.GetMaximum()*1.3))
+    h_div_func.SetMinimum(0.0)
+    h_div_func.SetMaximum(2.0)
+    
+    h_div_func.Draw('E1')
+    c1.Draw()
+    c1.SaveAs(globale.outputdir_png+ file_name + ".png")
+    c1.SaveAs(globale.outputdir_pdf+ file_name + ".pdf")
+    c1.SaveAs(globale.outputdir_root+ file_name + ".root")
+    
+    h_data_func.Delete()
+    h_ext_func.Delete()
+    h_dirt_func.Delete()
+    #h_overlay_func = {} # make an array of histograms for the different interactions
+    for x in globale.overlay_signals:
+        h_overlay_func[x].Delete()
+    #sel.Delete()
+    return normalization
+    
+def make_stacked_histo_MCC8_pub_corr2(cut,variable,weight,title,xstart,xend,xbins,file_name,side='right'):
+
+    #mom_bins = [ 0.00, 0.18, 0.30, 0.45, 0.77, 1.28, 2.50 ]
+    #binnum = len(mom_bins) - 1
+    #initialize the 1d histograms
+    #h_data_func = ROOT.TH1F("h_data_func",title,binnum,array('f',mom_bins))
+    #h_ext_func = ROOT.TH1F("h_ext_func",title,binnum,array('f',mom_bins))
+    #h_dirt_func = ROOT.TH1F("h_dirt_func",title,binnum,array('f',mom_bins))
+    
+    weight_name = 'EventWeight*TunedCentralValue_Genie'
+    #weight_name = '1'
+    variable_MC = '(sqrt(TrackMomMCS_mom*TrackMomMCS_mom - 0.105*0.105)+0.105)'
+    variable_MC = 'sqrt((TrackMomMCS_mom-0.105)*(TrackMomMCS_mom-0.105)+0.105*0.105)'
+    h_data_func = ROOT.TH1F("h_data_func",title,xbins,xstart,xend)
+    h_ext_func = ROOT.TH1F("h_ext_func",title,xbins,xstart,xend)
+    h_dirt_func = ROOT.TH1F("h_dirt_func",title,xbins,xstart,xend)
+    h_overlay_func = {} # make an array of histograms for the different interactions
+    for x in globale.overlay_signals:
+        h_overlay_func[x] = ROOT.TH1F(x,title,xbins,xstart,xend)
+        #h_overlay_func[x] = ROOT.TH1F(x,title,binnum,array('f',mom_bins))
+    globale.data_out.Draw(variable+'>>h_data_func',cut,'')
+    globale.ext_out.Draw(variable+'>>h_ext_func',cut,'')
+    globale.dirt_out.Draw(variable_MC+'>>h_dirt_func',weight_name+'*('+cut+')','')
+
+    cut = cut +' && '
+    for x in globale.overlay_signals:
+        histo = x
+        globale.overlay_out.Draw(variable_MC+'>>'+histo,weight_name+'*('+cut+x+')','')
+    # prepare the stacked histogram
+    hs = ROOT.THStack("hs","");
+    h_data_func.SetLineWidth(1)
+    
+    h_data_func.SetMarkerStyle(ROOT.kFullCircle);
+    h_data_func.SetMarkerSize(0.9);
+
+    #scale the histograms
+    h_data_func.Sumw2()
+    h_data_func.Scale(globale.scale[globale.data])
+    h_ext_func.Sumw2()
+    h_ext_func.Scale(globale.scale[globale.ext])
+    h_dirt_func.Sumw2()
+    h_dirt_func.Scale(globale.scale[globale.dirt])
+    #fill the stacked histogram
+    hs.Add(h_ext_func)
+    hs.Add(h_dirt_func)
+    mc_events = 0
+    mc_event_list = {}
+    for i,x in enumerate(globale.overlay_signals):
+        #h_overlay_func[x].Sumw2()
+        h_overlay_func[x].Scale(globale.scale[globale.overlay])
+        mc_event_list[x] = h_overlay_func[x].GetSumOfWeights()
+        mc_events = mc_events+mc_event_list[x]
+        hs.Add(h_overlay_func[x])
+    # use marcos colors:
+    h_ext_func.SetFillColor(ROOT.kBlue+2)
+    h_ext_func.SetLineColor(ROOT.kBlue+2)
+    h_ext_func.SetFillStyle(3004)
+    
+    h_dirt_func.SetLineColor(ROOT.kOrange+2);
+    h_dirt_func.SetFillColor(ROOT.kOrange+2);
+    
+    h_overlay_func['numu_signal'].SetFillColor(ROOT.kRed)
+    h_overlay_func['numu_signal'].SetLineColor(ROOT.kRed)
+    
+    h_overlay_func['numu_nomuon'].SetFillColor(ROOT.kRed+2)
+    h_overlay_func['numu_nomuon'].SetLineColor(ROOT.kRed+2)
+    
+    h_overlay_func['numu_nue'].SetFillColor(ROOT.kMagenta+1)
+    h_overlay_func['numu_nue'].SetLineColor(ROOT.kMagenta+1)
+    
+    h_overlay_func['numu_antinu'].SetFillColor(ROOT.kOrange-3)
+    h_overlay_func['numu_antinu'].SetLineColor(ROOT.kOrange-3)
+    
+    h_overlay_func['numu_nc'].SetFillColor(ROOT.kGray)
+    h_overlay_func['numu_nc'].SetLineColor(ROOT.kGray)
+    
+    h_overlay_func['numu_cosmic'].SetFillColor(ROOT.kBlue)
+    h_overlay_func['numu_cosmic'].SetLineColor(ROOT.kBlue)
+    
+    h_overlay_func['numu_ov'].SetFillColor(ROOT.kGreen+2)
+    h_overlay_func['numu_ov'].SetLineColor(ROOT.kGreen+2)
+
+    # calculate the data - MC ratio
+    data_events = h_data_func.GetEntries()*globale.scale[globale.data]
+    ext_events = h_ext_func.GetEntries()*globale.scale[globale.ext]
+    dirt_events = h_dirt_func.GetSumOfWeights()
+    mc_events = mc_events + dirt_events
+    normalization = (data_events)/(mc_events+ext_events)
+    print 'Normalization (data)/(mc +ext) = ', normalization
+    if side == 'left':
+        legend = ROOT.TLegend(0.15,0.30,0.5,0.9) # LEGEND LEFT
+        #legend = ROOT.TLegend(0.15,0.65,0.45,0.9) # LEGEND LEFT
+    else:
+        #legend = ROOT.TLegend(0.6,0.65,0.9,0.9); #LEGEND RIGHT
+        legend = ROOT.TLegend(0.55,0.30,0.9,0.9)
+    if variable == 'TrackPID_chiproton' or variable == 'NuScore' or variable == 'TrackPhi' or variable == 'Nu_Vx_sce' or variable == 'Nu_Vy_sce' or variable == 'Nu_Vz_sce':
+        legend = ROOT.TLegend(0.15,0.68,0.85,0.9) # LEGEND LEFT
+        legend.SetNColumns(2)
+    #data_name = 'Data: {0:0.1f}'.format(data_events)
+    data_name = 'Data (Beam-on, stat. only)'#: {0:0.1f}'.format(data_events)
+    #ext_name = 'Data (Beam off):'+' {0:0.1f}'.format(ext_events)+', {0:0.1f}%'.format(ext_events*100.0/(mc_events+ext_events))
+    #dirt_name = 'Dirt:'+' {0:0.1f}'.format(dirt_events)+', {0:0.1f}%'.format(dirt_events*100.0/(mc_events+ext_events))
+    ext_name = 'Data (Beam-off): {0:0.1f}%'.format(ext_events*100.0/(mc_events+ext_events))# +' {0:0.1f}'.format(ext_events)
+    dirt_name = 'Dirt: {0:0.1f}%'.format(dirt_events*100.0/(mc_events+ext_events))#+' {0:0.1f}'.format(dirt_events)
+
+    overlay_signals_name = ['#nu_{#mu} CC (signal)','#nu_{#mu} CC (not #mu)','#nu_{e}, #bar{#nu_{e}} CC','#bar{#nu_{#mu}} CC','NC', 'OUTFV', 'Cosmic']
+    overlay_signals_func = ['numu_signal','numu_nomuon','numu_nue','numu_antinu','numu_nc','numu_ov','numu_cosmic']
+
+    for i,x in enumerate(overlay_signals_func):
+        #ov_name = '%20s'%overlay_signals_name[i]+': {0:0.1f}'.format(mc_event_list[x])+': {0:0.1f}%'.format(mc_event_list[x]*100.0/(mc_events+ext_events))
+        #ov_name = overlay_signals_name[i]+':\t {0:0.1f}'.format(mc_event_list[x])+',\t {0:0.1f}%'.format(mc_event_list[x]*100.0/(mc_events+ext_events))
+        ov_name = overlay_signals_name[i]+': {0:0.1f}%'.format(mc_event_list[x]*100.0/(mc_events+ext_events))# + ': {0:0.1f}'.format(mc_event_list[x])
+        legend.AddEntry(h_overlay_func[x],ov_name,"f");
+    legend.AddEntry(h_dirt_func,dirt_name,"f")
+    legend.AddEntry(h_ext_func,ext_name,"f")
+    legend.AddEntry(h_data_func,data_name,"lep")
+    #prepare the canvas with thw pads
+    c1 = ROOT.TCanvas("c1","c1",1600,1200)
+    c1.SetGrid(1)
+    c1.SetLeftMargin(0.25)
+    c1.SetRightMargin(0.18)
+    c1.SetBottomMargin(0.14)
+    # first pad
+    c1.cd()
+    pad1 = ROOT.TPad('pad1','pad1',0,0.35,1,1)
+    pad1.SetGrid(1)
+    pad1.Draw()
+    pad1.cd()
+    # draw fisrt histogram with data points and stacked ext and MC
+    h_data_func.SetYTitle("Entries per bin")
+    h_data_func.SetMinimum(0)
+    if variable == 'TrackPID_chiproton' or variable == 'TrackPhi' or variable == 'Nu_Vx_sce' or variable == 'Nu_Vy_sce' or variable == 'Nu_Vz_sce':
+        h_data_func.SetMaximum(h_data_func.GetMaximum()*1.5)
+    else:
+        h_data_func.SetMaximum(h_data_func.GetMaximum()*1.3)
+        #h_data_func.SetMinimum(1.0/h_data_func.GetMaximum()/1.3)
+    
+    h_data_func.GetYaxis().SetLabelSize(0.06);
+    h_data_func.GetYaxis().SetTitleSize(0.06);
+    h_data_func.GetYaxis().SetTitleOffset(1.01);
+    h_data_func.GetYaxis().SetTitleOffset(1.01);
+    h_data_func.GetXaxis().SetLabelOffset(999);
+    h_data_func.GetXaxis().SetTitleOffset(999);
+    h_data_func.GetXaxis().SetLabelSize(0);
+    h_data_func.GetXaxis().SetTitleSize(0);
+    pad1.SetBottomMargin(0.03);
+    pad1.SetLeftMargin(0.12);
+    pad1.SetTopMargin(0.1)
+    h_data_func.SetLineColor(ROOT.kBlack)
+    h_data_func.SetLineWidth(2)
+    ROOT.gStyle.SetEndErrorSize(9)
+    
+    h_data_func.Draw('E1')
+    legend.Draw();
+    hs.Draw('same hist')
+    h_data_func.Draw('E1 same')
+
+    prelim = ROOT.TLatex(0.9,0.93, "MicroBooNE Preliminary");
+    prelim.SetTextFont(62);
+    prelim.SetTextColor(ROOT.kGray+2);
+    prelim.SetNDC();
+    prelim.SetTextSize(1/15.);
+    prelim.SetTextAlign(32);
+    #prelim.SetTextSize(0.04631579);
+    prelim.Draw()
+    if variable != 'crthit_vertex_zcut' and variable != 'nr_crthit_top':
+        pot_latex = ROOT.TLatex(.10, .91,'Accumulated POT: '+str(pot_data)) 
+        pot_latex.SetTextFont(62);
+        pot_latex.SetTextColor(ROOT.kGray+2);
+        pot_latex.SetNDC();
+        pot_latex.SetTextSize(1/15.);
+        pot_latex.SetTextAlign(10) #;//left adjusted
+        pot_latex.Draw();
+    
+    # second pad
+    c1.cd()
+    h_data_func.GetXaxis().SetLabelOffset(0);
+    h_data_func.GetXaxis().SetTitleOffset(0);
+    pad2 = ROOT.TPad('pad2','pad2',0,0,1,0.35)
+    pad2.SetGrid(1)
+    pad2.SetTopMargin(0.04)
+    pad2.SetBottomMargin(0.4)
+    pad2.SetLeftMargin(0.12);
+    pad2.SetLeftMargin(0.12);
+    pad2.Draw()
+    pad2.cd()
+    # Draw data - MC difference
+    h_tot_func = h_ext_func.Clone()
+    h_div_func = h_data_func.Clone()
+    h_tot_func.Add(h_dirt_func)
+    for i,x in enumerate(globale.overlay_signals):
+        h_tot_func.Add(h_overlay_func[x])
+    h_div_func.Divide(h_tot_func )
+    #h_test = hs.GetHistogram().Clone()
+    #h_div_func.Divide(h_test )
+    h_div_func = make_stacked_histo_weight_pad2(h_div_func)
+    h_div_func.SetXTitle(title)
+    h_div_func.GetXaxis().CenterTitle()
+    h_div_func.GetYaxis().SetTitleSize(0.1)
+    h_div_func.GetYaxis().SetTitleOffset(0.3)
+    h_div_func.GetYaxis().SetLabelSize(0.07)
+    h_div_func.GetXaxis().SetTitleSize(0.15)
+    h_div_func.GetXaxis().SetLabelSize(0.15)
+    h_div_func.GetXaxis().SetTitleOffset(1)
+    
+    if variable == 'TrackMomRange_mu' or variable == 'TrackMomMCS_mom' or variable == 'Nu_Vx_sce' or variable == 'Nu_Vy_sce' or variable == 'Nu_Vz_sce':
+        if h_div_func.GetMinimum() == 0:
+            h_div_func.SetMinimum(1.0/(h_div_func.GetMaximum()*1.3))
+    h_div_func.SetMinimum(0.0)
+    h_div_func.SetMaximum(2.0)
+    
+    h_div_func.Draw('E1')
+    c1.Draw()
+    c1.SaveAs(globale.outputdir_png+ file_name + ".png")
+    c1.SaveAs(globale.outputdir_pdf+ file_name + ".pdf")
+    c1.SaveAs(globale.outputdir_root+ file_name + ".root")
+    
+    h_data_func.Delete()
+    h_ext_func.Delete()
+    h_dirt_func.Delete()
+    #h_overlay_func = {} # make an array of histograms for the different interactions
+    for x in globale.overlay_signals:
+        h_overlay_func[x].Delete()
+    #sel.Delete()
+    return normalization
+   
+    
 def make_stacked_histo_MCC8_pub_impMom(cut,weight,title,xstart,xend,xbins,file_name,side='right'):
 
     #mom_bins = [ 0.00, 0.18, 0.30, 0.45, 0.77, 1.28, 2.50 ]
@@ -1481,6 +2198,7 @@ def make_stacked_histo_MCC8_pub_impMom(cut,weight,title,xstart,xend,xbins,file_n
     #h_dirt_func = ROOT.TH1F("h_dirt_func",title,binnum,array('f',mom_bins))
     
     weight_name = 'EventWeight*TunedCentralValue_Genie'
+    #weight_name = '1'
     h_data_func = ROOT.TH1F("h_data_func",title,xbins,xstart,xend)
     h_ext_func = ROOT.TH1F("h_ext_func",title,xbins,xstart,xend)
     h_dirt_func = ROOT.TH1F("h_dirt_func",title,xbins,xstart,xend)
@@ -1621,11 +2339,13 @@ def make_stacked_histo_MCC8_pub_impMom(cut,weight,title,xstart,xend,xbins,file_n
     h_data_func.GetYaxis().SetLabelSize(0.06);
     h_data_func.GetYaxis().SetTitleSize(0.06);
     h_data_func.GetYaxis().SetTitleOffset(0.8);
+    h_data_func.GetYaxis().SetTitleOffset(1.01);
     h_data_func.GetXaxis().SetLabelOffset(999);
     h_data_func.GetXaxis().SetTitleOffset(999);
     h_data_func.GetXaxis().SetLabelSize(0);
     h_data_func.GetXaxis().SetTitleSize(0);
     pad1.SetBottomMargin(0.03);
+    pad1.SetLeftMargin(0.12);
     pad1.SetTopMargin(0.1)
     h_data_func.SetLineColor(ROOT.kBlack)
     h_data_func.SetLineWidth(2)
@@ -1660,6 +2380,8 @@ def make_stacked_histo_MCC8_pub_impMom(cut,weight,title,xstart,xend,xbins,file_n
     pad2.SetGrid(1)
     pad2.SetTopMargin(0.04)
     pad2.SetBottomMargin(0.4)
+    pad2.SetLeftMargin(0.12);
+    pad2.SetLeftMargin(0.12);
     pad2.Draw()
     pad2.cd()
     # Draw data - MC difference
@@ -1680,6 +2402,9 @@ def make_stacked_histo_MCC8_pub_impMom(cut,weight,title,xstart,xend,xbins,file_n
     h_div_func.GetXaxis().SetTitleSize(0.15)
     h_div_func.GetXaxis().SetLabelSize(0.15)
     h_div_func.GetXaxis().SetTitleOffset(1)
+    
+    h_div_func.SetMinimum(0.0)
+    h_div_func.SetMaximum(2.0)
     
     h_div_func.Draw('E1')
     c1.Draw()
@@ -1765,7 +2490,7 @@ def make_stacked_histo_onoff_pub(cut,variable,weight,title,xstart,xend,xbins,fil
     normalization = (data_events)/(mc_events+ext_events)
     print 'Normalization (data)/(mc +ext) = ', normalization
     if side == 'left':
-        legend = ROOT.TLegend(0.10,0.30,0.45,0.9) # LEGEND LEFT
+        legend = ROOT.TLegend(0.15,0.30,0.45,0.9) # LEGEND LEFT
         #legend = ROOT.TLegend(0.15,0.65,0.45,0.9) # LEGEND LEFT
     else:
         #legend = ROOT.TLegend(0.6,0.65,0.9,0.9); #LEGEND RIGHT
@@ -1839,11 +2564,13 @@ def make_stacked_histo_onoff_pub(cut,variable,weight,title,xstart,xend,xbins,fil
     h_data_func.GetYaxis().SetLabelSize(0.06);
     h_data_func.GetYaxis().SetTitleSize(0.06);
     h_data_func.GetYaxis().SetTitleOffset(0.8);
+    h_data_func.GetYaxis().SetTitleOffset(1.01);
     h_data_func.GetXaxis().SetLabelOffset(999);
     h_data_func.GetXaxis().SetTitleOffset(999);
     h_data_func.GetXaxis().SetLabelSize(0);
     h_data_func.GetXaxis().SetTitleSize(0);
     pad1.SetBottomMargin(0.03);
+    pad1.SetLeftMargin(0.12);
     pad1.SetTopMargin(0.1)
     h_data_func.SetLineColor(ROOT.kBlack)
     h_data_func.SetLineWidth(4)
@@ -1862,6 +2589,7 @@ def make_stacked_histo_onoff_pub(cut,variable,weight,title,xstart,xend,xbins,fil
     prelim.SetTextAlign(32);
     #prelim.SetTextSize(0.04631579);
     prelim.Draw()
+    '''
     pot_latex = ROOT.TLatex(.10, .91,'Accumulated POT: '+str(pot_data)) 
     pot_latex.SetTextFont(62);
     pot_latex.SetTextColor(ROOT.kGray+2);
@@ -1869,7 +2597,7 @@ def make_stacked_histo_onoff_pub(cut,variable,weight,title,xstart,xend,xbins,fil
     pot_latex.SetTextSize(1/15.);
     pot_latex.SetTextAlign(10) #;//left adjusted
     pot_latex.Draw();
-    
+    '''
     
     # second pad
     c1.cd()
@@ -1879,6 +2607,8 @@ def make_stacked_histo_onoff_pub(cut,variable,weight,title,xstart,xend,xbins,fil
     pad2.SetGrid(1)
     pad2.SetTopMargin(0.04)
     pad2.SetBottomMargin(0.4)
+    pad2.SetLeftMargin(0.12);
+    pad2.SetLeftMargin(0.12);
     pad2.Draw()
     pad2.cd()
     # Draw data - MC difference

@@ -21,7 +21,7 @@ from array import array
 import collections
 
 inputdir = '/home/tmettler/Desktop/v08_00_00_33/V08_00_00_35/weighted/'
-outputdir = '/home/tmettler/Desktop/v08_00_00_33/V08_00_00_35/weighted_improved/event_rates_all_pub_2/'
+outputdir = '/home/tmettler/Desktop/v08_00_00_33/V08_00_00_35/weighted_improved/event_rates_fullRun3_tmp/'
 #input_filedir = '/home/tmettler/Desktop/v08_00_00_33/V08_00_00_35/weighted/'
 lib_function_dir = '/home/tmettler/Desktop/uBoone/do_plots/'
 
@@ -73,7 +73,7 @@ ROOT.gStyle.SetOptTitle(0)
 c1 = ROOT.TCanvas("c1","c1",1600,1200)
 c1.SetGrid(1)
 c1.SetLeftMargin(0.14)
-c1.SetRightMargin(0.05)
+c1.SetRightMargin(0.1)
 c1.SetBottomMargin(0.14)
 
 
@@ -91,7 +91,8 @@ outputdir_png, outputdir_root,outputdir_pdf = NuCC.prepareOutput2(outputdir)
 
 #filename_overlay = 'NuCCana_overlay_V26_weight.root'
 
-filename_data = 'NuCCana_data_V25.root'
+#filename_data = 'NuCCana_data_V25.root'NuCCana_data_fullRun3
+filename_data = 'NuCCana_data_fullRun3.root'
 filename_ext = 'NuCCana_ext_V25_G1.root'
 filename_dirt = 'NuCCana_dirt_V26_weight.root'
     
@@ -109,13 +110,14 @@ NuCC.printNumberOfEntries(data,ext,dirt,overlay)
 pot_overlay = NuCC.getPOT(inputdir,filename_overlay,tree_name)
 pot_dirt =  NuCC.getPOT(inputdir,filename_dirt,tree_name)
 #V25 files
-#pot_data =     8.649e+18  # best with tor875
-#data_trigger = 2220362.0 #1854495.0 #4743794 # 1987072.0 # E1DCNT_wcut
 
-pot_data =     7.644e+18  # best with tor875
-data_trigger = 1838700.0 #1854495.0 #4743794 # 1987072.0 # E1DCNT_wcut
-
+#pot_data =     7.644e+18  # best with tor875
+#data_trigger = 1838700.0 #1854495.0 #4743794 # 1987072.0 # E1DCNT_wcut
 ext_trigger =  85768579.0  #2120135 #5685315 # EXT
+
+pot_data =     2.144e+20  # best with tor875
+data_trigger = 51546294.0 #1854495.0 #4743794 # 1987072.0 # E1DCNT_wcut
+
 
 
 print 'POT: '
@@ -309,6 +311,8 @@ folder = ''
 
 
 # In[ ]:
+cut = 'fidVol && muon && crt_tom_cut && TrackScore>0.8 && TrackLength>20 && TrackPID_chiproton>78 && NuScore>0.1'
+# plot whatever you want...
 
 
 cut = 'fidVol && muon && crt_tom_cut && TrackScore>0.8 && TrackLength>20 && TrackPID_chiproton>78 && NuScore>0.1'
@@ -320,7 +324,6 @@ folder = ''
 outputdir_png, outputdir_root,outputdir_pdf = NuCC.prepareOutput2(outputdir+folder)
 NuCC.loadGlobal(data,ext,dirt,overlay,data_out,ext_out,dirt_out,overlay_out,scale,scale_out,tot_num_fidVol,overlay_signals,sample,sample_out, name,name_out, outputdir_png, outputdir_root,outputdir_pdf)
 print 'All cuts'
-
 NuCC_w.make_stacked_histo_MCC8_pub(cut,'Nu_Vx_sce','EventWeight','#nu_{#mu}^{reco} vertex X position [cm]',-10,270,20,'NuVx_sce'+name,side_left)
 NuCC_w.make_stacked_histo_MCC8_pub(cut,'Nu_Vy_sce','EventWeight','#nu_{#mu}^{reco} vertex Y position [cm]',-120,120,20,'NuVy_sce'+name,side_left)
 NuCC_w.make_stacked_histo_MCC8_pub(cut,'Nu_Vz_sce','EventWeight','#nu_{#mu}^{reco} vertex Z position [cm]',-50,1050,20,'NuVz_sce'+name,side_left)
@@ -345,7 +348,6 @@ NuCC_w.make_stacked_histo_onoff_pub(cut,'(nr_crthit_top==0)','EventWeight','nr_c
 NuCC_w.make_stacked_histo_onoff_pub(cut,'(crthit_vertex_zcut==0)','EventWeight','nr_crthit_top',0,2,2,'CRTvertex_cut'+name,side_left,'has uptream CRTHit','has No upstreamCRTHit')
 NuCC_w.make_stacked_histo_onoff_pub(cut,'(track_end_uncontained==1 || nr_crthit_beam_tres==0)','EventWeight','nr_crthit_top',0,2,2,'CRTcontVeto_cut'+name,side_left,'Veto for cont. event','No Veto')
 NuCC_w.make_stacked_histo_onoff_pub(cut,'crt_cut','EventWeight','nr_crthit_top',0,2,2,'CRTAsso_cut'+name,side_left,'has as. CRTHit off beam','has No as. CRTHit off beam')
-
 
 # In[ ]:
 
@@ -366,7 +368,6 @@ NuCC_w.make_stacked_histo_MCC8_pub(cut,'TrackMomMCS_mom','EventWeight','p_{#mu}^
 NuCC_w.make_stacked_histo_MCC8_pub(cut,'TrackMomRange_mu','EventWeight','p_{#mu}^{reco} range [GeV]' ,0,1.5,20,'TrackMomR'+name,side_right)
 NuCC_w.make_stacked_histo_MCC8_pub(cut,'cos(TrackTheta)','EventWeight','cos(#theta_{#mu}^{reco})',-1,1.001,20,'cosTheta'+name,side_left)
 NuCC_w.make_stacked_histo_MCC8_pub(cut,'TrackPhi','EventWeight','#phi_{#mu}^{reco}',-3.15,3.15,20,'phi'+name,side_left)
-
 NuCC_w.make_stacked_histo_MCC8_pub(cut,'TrackLength','EventWeight','Candidate Track Length [cm]',0,600,50,'TrackLength'+name,'right')
 NuCC_w.make_stacked_histo_MCC8_pub(cut,'TrackPID_chiproton','EventWeight','Track PID proton',0,350,20,'PIDproton'+name,side_left)
 NuCC_w.make_stacked_histo_MCC8_pub(cut,'TrackPID_chimuon','EventWeight','Track PID muon',0,60,20,'PIDmuon'+name,'right')
@@ -383,7 +384,6 @@ NuCC_w.make_stacked_histo_onoff_pub(cut,'(nr_crthit_top==0)','EventWeight','nr_c
 NuCC_w.make_stacked_histo_onoff_pub(cut,'(crthit_vertex_zcut==0)','EventWeight','nr_crthit_top',0,2,2,'CRTvertex_cut'+name,side_left,'has uptream CRTHit','has No upstreamCRTHit')
 NuCC_w.make_stacked_histo_onoff_pub(cut,'(track_end_uncontained==1 || nr_crthit_beam_tres==0)','EventWeight','nr_crthit_top',0,2,2,'CRTcontVeto_cut'+name,side_left,'Veto for cont. event','No Veto')
 NuCC_w.make_stacked_histo_onoff_pub(cut,'crt_cut','EventWeight','nr_crthit_top',0,2,2,'CRTAsso_cut'+name,side_left,'has as. CRTHit off beam','has No as. CRTHit off beam')
-
 
 # In[ ]:
 
